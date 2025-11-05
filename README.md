@@ -1,3 +1,3 @@
-# blue-dome
+# Blue Dome
 
-Planetary defense modeling with co-design for ACT4ED, Fall 2025
+Planetary defense modeling with co-design for [ACT4ED](https://zardini.mit.edu/act4ed/), Fall 2025
