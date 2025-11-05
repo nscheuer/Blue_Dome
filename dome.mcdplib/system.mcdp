@@ -1,18 +1,13 @@
-# Sample DP
 mcdp {
-  provides extra_payload [kg]
-  provides velocity [m/s]
+  requires cost [USD]
+
+  sub detection = instance `detection
+  sub redirection = instance `redirection 
   
-  # Let's use fancy product of posets
-  requires cost_and_mass [product(overall_cost: USD, total_mass: kg)]
-
-  battery_dp = instance `battery
-  chassis_dp = instance `chassis
-
-  provided extra_payload + mass_battery required by battery_dp <= total_load provided by chassis_dp
-  power required by chassis_dp <= power provided by battery_dp
-
-  provided velocity <= velocity provided by chassis_dp
-  (required cost_and_mass).overall_cost >= total_cost required by battery_dp
-  (required cost_and_mass).total_mass >= total_mass required by chassis_dp
+  time_to_impact required by redirection <= time_to_impact provided by detection
+  required cost >= (cost required by detection + cost required by redirection)
+  requires mass for redirection
+  provides damage_reduced using redirection
+  
+  ignore unconnected
 }

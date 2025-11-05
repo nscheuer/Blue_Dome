@@ -1,0 +1,5 @@
+mcdp {
+  requires cost [USD]
+  provides sensor_array [dimensionless]
+  ignore unconnected
+}
