@@ -1,8 +1,0 @@
-mcdp {
-  requires c3 [dimensionless]
-  requires time_to_impact [s]
-  requires mass_prop [kg]
-  requires mass_impact [kg]
-  provides necessary_deflection [m/s]
-  ignore unconnected
-}

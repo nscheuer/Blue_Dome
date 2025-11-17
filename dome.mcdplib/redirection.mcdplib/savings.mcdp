@@ -1,5 +1,0 @@
-mcdp {
-  requires necessary_deflection [m/s]
-  provides damage_reduced [USD]
-  ignore unconnected
-}

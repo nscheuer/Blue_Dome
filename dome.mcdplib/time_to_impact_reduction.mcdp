@@ -1,0 +1,5 @@
+mcdp {
+  requires sensor_array [dimensionless]
+  provides time_to_impact [s]
+  ignore unconnected
+}

@@ -1,6 +1,0 @@
-mcdp {
-  requires cost [USD]
-  requires mass [kg]
-  provides c3 [dimensionless]
-  ignore unconnected
-}
