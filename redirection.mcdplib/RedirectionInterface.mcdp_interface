@@ -1,0 +1,6 @@
+interface {
+  requires cost [USD]
+  requires mass [kg]
+  requires time_to_impact [s]
+  provides damage_reduced [USD]
+}

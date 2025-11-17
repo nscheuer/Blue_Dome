@@ -1,0 +1,4 @@
+interface {
+  requires cost [USD]
+  provides time_to_impact [s]
+}

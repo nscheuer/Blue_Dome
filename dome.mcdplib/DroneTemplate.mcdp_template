@@ -1,0 +1,20 @@
+from library costs import interface CostsInterface
+from library detection import interface DetectionInterface
+from library redirection import interface RedirectionInterface
+
+template [
+    Costs: CostsInterface,
+    Detection: DetectionInterface,
+    Redirection: RedirectionInterface
+] mcdp {
+    sub costs = instance Costs
+    sub detection = instance Detection
+    sub redirection = instance Redirection
+
+    requires cost for costs
+    requires mass for redirection
+    provides damage_reduced using redirection
+    
+    time_to_impact required by redirection <= time_to_impact provided by detection
+    cost required by detection <= detection_cost provided by costs
+}
