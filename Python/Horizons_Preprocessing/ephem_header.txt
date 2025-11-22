@@ -1,0 +1,9 @@
+stk.v.12.0
+BEGIN Ephemeris
+    InterpolationMethod     Lagrange
+    InterpolationOrder      5
+    DistanceUnit            Kilometers
+    CentralBody             Earth
+    CoordinateSystem        ICRF
+    TimeFormat              JDate
+    EphemerisTimePosVel
