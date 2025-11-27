@@ -1,0 +1,45 @@
+cabal-version: 3.14
+-- Instructions on how to write this file are in the Cabal
+-- documentation, which can be found here:
+--   http://haskell.org/cabal/release/cabal-latest/doc/users-guide/
+name: dome 
+version: 1.0.0.0
+license: GPL-3.0-or-later
+license-file: LICENSE
+author: Ananth Venkatesh
+maintainer: Ananth Venkatesh <ananthv@mit.edu>
+bug-reports: mailto:ananthv@mit.edu
+stability: stable
+synopsis: Generator utilities for filling in MCDP templates for planetary defense under project "Blue Dome"
+build-type: Simple
+
+source-repository head
+  type: git
+  location: https://code.functor.systems/q9i/urop-zardini
+
+flag threaded
+  default: False
+
+executable sensors
+  hs-source-dirs: src
+  main-is: Sensors.hs
+  other-modules: Constants, Utils, Types, Data, Plot
+  default-extensions: NumDecimals, OverloadedStrings
+  build-depends:
+    base,
+    relude,
+    regex-compat,
+    granite
+
+  default-language: GHC2024
+  mixins:
+    base hiding (Prelude),
+    relude (Relude as Prelude),
+    relude
+
+  ghc-options: -XDerivingStrategies
+
+  if flag(threaded)
+    ghc-options:
+      -threaded
+      -XDerivingStrategies

@@ -1,0 +1,5 @@
+[default.extend-words]
+hask = "hask"
+lits = "lits"
+typ = "typ"
+wheres = "wheres"

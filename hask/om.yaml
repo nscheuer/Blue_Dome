@@ -1,0 +1,12 @@
+develop:
+  default:
+    readme: |
+      Use the runner devshell to get access to pre-commit tooling
+
+      ```sh-session
+      nix develop .#runner
+      ```
+
+      From there, you can run `vale` for non-reproducible prose linting
+
+      ---
