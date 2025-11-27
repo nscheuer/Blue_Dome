@@ -166,7 +166,7 @@ for i, row in df_ir_specs.iterrows():
     P_24h = f_sky * P_single  # one effective chance/day; use 1-(1-f_sky*P)^N for N looks
 
     im = axes2[i].pcolormesh(
-        Delta_AU, D_m, P_24h, shading="auto", cmap=cm.inferno, vmin=0, vmax=1
+        Delta_AU, D_m, P_single, shading="auto", cmap=cm.inferno, vmin=0, vmax=1
     )
     axes2[i].set_title(f"{survey}\n(f_sky = {f_sky:.3f})", fontsize=11)
     axes2[i].set_xlabel("Geocentric Range Δ (AU)")
@@ -179,4 +179,4 @@ for j in range(len(df_ir_specs), len(axes2)):
 
 fig2.suptitle("Probability of Detection in 24 h (Space-based IR, with Coverage)", fontsize=18, fontweight="bold")
 
-plt.show()
+plt.savefig("plots/space_sensors.png")

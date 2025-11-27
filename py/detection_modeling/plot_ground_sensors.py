@@ -115,7 +115,7 @@ for i, row in df_optical_specs.iterrows():
     P_24h = f_sky * P_single  # coverage-adjusted probability
 
     im = axes2[i].pcolormesh(
-        R_AU, D_m, P_24h, shading="auto", cmap=cm.inferno, vmin=0, vmax=1
+        R_AU, D_m, P_single, shading="auto", cmap=cm.inferno, vmin=0, vmax=1
     )
     axes2[i].set_title(f"{survey_name}\n(f_sky = {f_sky:.3f})", fontsize=11)
     axes2[i].set_xlabel("Range Δ (AU)")
@@ -128,4 +128,4 @@ for j in range(len(df_optical_specs), len(axes2)):
 
 fig2.suptitle("Probability of Detection in 24 h (with Sky Coverage)", fontsize=18, fontweight="bold")
 
-plt.show()
+plt.savefig("plots/ground_sensors.png")
