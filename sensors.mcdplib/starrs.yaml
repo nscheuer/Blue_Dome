@@ -5,8 +5,8 @@ F:
 - "dimensionless"
 - "dimensionless"
 R:
-- "USD"
-- "USD"
+- USD
+- USD
 implementations:
   starrs_1:
     f_max:
@@ -16,8 +16,8 @@ implementations:
     - "0.4 dimensionless"
     - "0.5 dimensionless"
     r_min:
-    - "100000000 USD"
-    - "10000000 USD"
+    - 100000000 USD
+    - 10000000 USD
   starrs_2:
     f_max:
     - "0.2 dimensionless"
@@ -26,5 +26,5 @@ implementations:
     - "0.5 dimensionless"
     - "0.6 dimensionless"
     r_min:
-    - "200000000 USD"
-    - "20000000 USD"
+    - 200000000 USD
+    - 20000000 USD
