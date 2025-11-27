@@ -1,12 +1,7 @@
 dp {
   provides d1 [dimensionless]
   provides d2 [dimensionless]
-  provides d3 [dimensionless]
-  provides d4 [dimensionless]
-  provides d5 [dimensionless]
-  
   requires fixedCost [USD]
-  requires recurringCost [USD]
   
-  implemented-by yaml resource("starrs.yaml")
+  implemented-by yaml resource("starrs-123.yaml")
 }
