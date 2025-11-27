@@ -1,4 +1,4 @@
-mcdp {
+dp {
   provides d1 [dimensionless]
   provides d2 [dimensionless]
   provides d3 [dimensionless]
