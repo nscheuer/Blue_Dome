@@ -1,0 +1,5 @@
+mcdp {
+  requires cost [USD]
+  provides detection [dimensionless x dimensionless x dimensionless x dimensionless x dimensionless]
+  ignore unconnected
+}

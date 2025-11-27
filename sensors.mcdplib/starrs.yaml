@@ -1,0 +1,30 @@
+F:
+- "dimensionless"
+- "dimensionless"
+- "dimensionless"
+- "dimensionless"
+- "dimensionless"
+R:
+- "USD"
+- "USD"
+implementations:
+  starrs_1:
+    f_max:
+    - "0.1 dimensionless"
+    - "0.2 dimensionless"
+    - "0.3 dimensionless"
+    - "0.4 dimensionless"
+    - "0.5 dimensionless"
+    r_min:
+    - "100000000"
+    - "10000000"
+  starrs_2:
+    f_max:
+    - "0.2 dimensionless"
+    - "0.3 dimensionless"
+    - "0.4 dimensionless"
+    - "0.5 dimensionless"
+    - "0.6 dimensionless"
+    r_min:
+    - "200000000"
+    - "20000000"
