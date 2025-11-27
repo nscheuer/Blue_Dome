@@ -1,7 +1,13 @@
-dp {
+catalog {
   provides d1 [dimensionless]
   provides d2 [dimensionless]
-  requires fixedCost [USD]
+  provides d3 [dimensionless]
+  provides d4 [dimensionless]
+  provides d5 [dimensionless]
   
-  implemented-by yaml resource("starrs-123.yaml")
+  requires fixedCost [USD]
+  requires recurringCost [USD]
+  
+  0.1, 0.2, 0.3, 0.4, 0.5 ↤ starrs1 ↦ 100000000 USD, 10000000 USD
+  0.2, 0.3, 0.4, 0.5, 0.6 ↤ starrs2 ↦ 200000000 USD, 20000000 USD
 }
