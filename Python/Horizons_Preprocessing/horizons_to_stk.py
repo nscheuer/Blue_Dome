@@ -211,7 +211,7 @@ def convert_horizons(text: str) -> str:
 
 if __name__ == "__main__":
     script_dir = Path(__file__).parent
-    name: str = "earth_ephem_heliocentric"
+    name: str = "earth_ephem_2028"
     input_path = script_dir / "horizons_files" / f"{name}.txt"
     output_path = script_dir / "stk_files" / f"{name}.e"
 
