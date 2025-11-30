@@ -56,7 +56,6 @@ class SizeDistribution:
         plt.grid(True, which="both", ls="--", alpha=0.4)
         plt.legend()
         plt.tight_layout()
-        plt.show()
 
     # ----------------------------------------------------
     def plot_cdf(self, npts: int = 500):
@@ -71,4 +70,3 @@ class SizeDistribution:
         plt.grid(True, which="both", ls="--", alpha=0.4)
         plt.legend()
         plt.tight_layout()
-        plt.show()

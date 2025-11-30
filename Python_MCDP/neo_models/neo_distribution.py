@@ -21,6 +21,12 @@ class NEODistribution:
     def cdf_at(self, x: float) -> float:
         return float(np.interp(x, self.x, self.cdf))
     
+    def sample(self, n: int = 1) -> np.ndarray:
+        """Generate n random samples from the distribution."""
+        u = np.random.uniform(0, 1, size=n)
+        samples = np.interp(u, self.cdf, self.x)
+        return samples
+    
     def plot_pdf(self):
         plt.figure(figsize=(6, 4))
         plt.plot(self.x, self.pdf, label=f"{self.name} PDF")
