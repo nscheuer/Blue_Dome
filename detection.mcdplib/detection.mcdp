@@ -1,10 +1,12 @@
 mcdp {
-  sub sensor_selection = instance `sensor_selection
+  sub selection = instance `sensors.selection
   sub time_to_impact_reduction = instance `time_to_impact_reduction
 
-  sensor_array required by time_to_impact_reduction <= sensor_array provided by sensor_selection
-  requires cost for sensor_selection
+  requires fixedCost for selection
+  requires recurringCost for selection
   provides time_to_impact using time_to_impact_reduction
 
-  ignore unconnected
+  d1 required by time_to_impact_reduction <= d1 provided by selection
+  d2 required by time_to_impact_reduction <= d2 provided by selection
+  d3 required by time_to_impact_reduction <= d3 provided by selection
 }

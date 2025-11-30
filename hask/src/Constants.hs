@@ -68,6 +68,12 @@ root = ".."
 sensorsLib :: String
 sensorsLib = "sensors.mcdplib"
 
+detectionLib :: String
+detectionLib = "detection.mcdplib"
+
+detectionName :: String
+detectionName = "detection"
+
 sensorInterfaceName :: String
 sensorInterfaceName = "SensorInterface"
 
@@ -76,6 +82,15 @@ probabilityCatalogName = "probability"
 
 selectionName :: String
 selectionName = "selection"
+
+sensorSelectionName :: String
+sensorSelectionName = "selection"
+
+sensorSelectionRelPath :: String
+sensorSelectionRelPath = "sensors." ++ selectionName
+
+timeToImpactReductionName :: String
+timeToImpactReductionName = "time_to_impact_reduction"
 
 -- delimiter for in-line replacements
 delim :: Text
@@ -154,6 +169,12 @@ requiredKeyword = "required"
 providedKeyword :: Text
 providedKeyword = "provided"
 
+forKeyword :: Text
+forKeyword = "for"
+
+usingKeyword :: Text
+usingKeyword = "using"
+
 requiredBy :: Text
 requiredBy = "required by"
 
@@ -189,6 +210,9 @@ p2Name = "y"
 
 pName :: Text
 pName = "z"
+
+timeToImpactName :: Text
+timeToImpactName = "time_to_impact"
 
 costUnit :: Text
 costUnit = "USD"

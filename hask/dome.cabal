@@ -20,9 +20,9 @@ source-repository head
 flag threaded
   default: False
 
-executable sensors
+executable dome
   hs-source-dirs: src
-  main-is: Sensors.hs
+  main-is: Main.hs
   other-modules:
     Constants
     Data

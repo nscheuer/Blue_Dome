@@ -143,6 +143,14 @@ required name = requiredKeyword <> space <> name
 provided :: Text -> Text
 provided name = providedKeyword <> space <> name
 
+-- requires NAME for DP
+requiresFor :: Text -> Text -> Text
+requiresFor name dp = startResource <> padSpace name <> forKeyword <> space <> dp
+
+-- provides NAME using DP
+providesUsing :: Text -> Text -> Text
+providesUsing name dp = startFunctionality <> padSpace name <> usingKeyword <> space <> dp
+
 reqBy :: Text -> Text -> Text
 resource `reqBy` dp = resource <> padSpace requiredBy <> dp
 

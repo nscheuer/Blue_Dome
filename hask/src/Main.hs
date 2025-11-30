@@ -187,6 +187,42 @@ makeSelectionDP sub1 sub2 =
       , provided sample `lessThan` (pName `provBy` prob)
       ]
 
+detection :: Text
+detection = makeMCDP (instances ++ [emptyLine] ++ outer ++ [emptyLine] ++ constraints)
+ where
+  sensorSelection :: Text
+  sensorSelection = toText sensorSelectionName
+
+  sensorSelectionModule :: Text
+  sensorSelectionModule = toText sensorSelectionRelPath
+
+  timeToImpactReduction :: Text
+  timeToImpactReduction = toText timeToImpactReductionName
+
+  instances :: [Text]
+  instances =
+    [ addInstance sensorSelection sensorSelectionModule
+    , addSingleInstance timeToImpactReduction
+    ]
+
+  outer :: [Text]
+  outer =
+    [ requiresFor fixedCostName sensorSelection
+    , requiresFor recurringCostName sensorSelection
+    , providesUsing timeToImpactName timeToImpactReduction
+    ]
+
+  constraints :: [Text]
+  constraints = map makeConstraint [1 .. ratioSamples]
+
+  makeConstraint :: Int -> Text
+  makeConstraint i =
+    let
+      sample :: Text
+      sample = sensorDetectionFunctionName <> show i
+     in
+      (sample `reqBy` timeToImpactReduction) `lessThan` (sample `provBy` sensorSelection)
+
 writeCatalog :: (Text, Text) -> IO ()
 writeCatalog (name, catalog) = writeFileText (root </> sensorsLib </> toString name ++ extension) catalog
 
@@ -243,11 +279,15 @@ writeSensorSelection = do
         (root </> sensorsLib </> selectionName ++ extension)
     Nothing -> putStrLn "No selection written"
 
+writeDetection :: IO ()
+writeDetection = writeFileText (root </> detectionLib </> detectionName ++ extension) detection
+
 main :: IO ()
 main = do
   writeSensorCatalogs
   writeSensorInterface
   writeProbabilityCatalog
   writeSensorSelection
+  writeDetection
 
 -- main = mapM_ plot sensorHeatmaps
