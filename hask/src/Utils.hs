@@ -76,6 +76,10 @@ stringLines = T.intercalate newline
 indent :: [Text] -> [Text]
 indent = map (indentation <>)
 
+-- interface {...}
+makeInterface :: [Text] -> Text
+makeInterface lines = stringLines $ [startInterface] ++ indent lines ++ [endInterface, emptyLine]
+
 -- catalog {...}
 makeCatalog :: [Text] -> Text
 makeCatalog lines = stringLines $ [startCatalog] ++ indent lines ++ [endCatalog, emptyLine]

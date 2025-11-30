@@ -12,7 +12,7 @@ sizeSamples :: Int
 sizeSamples = 10
 
 ratioSamples :: Int
-ratioSamples = 10
+ratioSamples = 3
 
 costOptions :: Int
 costOptions = 10
@@ -53,11 +53,17 @@ fileSep = "/"
 extension :: String
 extension = ".mcdp"
 
+interfaceExtension :: String
+interfaceExtension = ".mcdp_interface"
+
 root :: String
 root = ".."
 
 sensorsLib :: String
 sensorsLib = "sensors.mcdplib"
+
+sensorInterfaceName :: String
+sensorInterfaceName = "SensorInterface"
 
 -- delimiter for in-line replacements
 delim :: Text
@@ -69,6 +75,12 @@ startCatalog = "catalog {"
 
 endCatalog :: Text
 endCatalog = "}"
+
+startInterface :: Text
+startInterface = "interface {"
+
+endInterface :: Text
+endInterface = "}"
 
 emptyLine :: Text
 emptyLine = ""

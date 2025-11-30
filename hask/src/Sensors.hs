@@ -75,20 +75,21 @@ sensorOption sensor i = addOption functionalitySamples (sensorName sensor <> sho
   functionalitySamples :: [Text]
   functionalitySamples = map show $ evalSamplesCombined sensor i
 
+sensorResources :: [Text]
+sensorResources =
+  [ addResource fixedCostName costUnit
+  , addResource recurringCostName costUnit
+  ]
+
+sensorFunctionalities :: [Text]
+sensorFunctionalities = addFunctionalities sensorDetectionFunctionName dimensionlessUnit ratioSamples
+
 makeSensorCatalog :: SensorData -> Text
 makeSensorCatalog sensor = makeCatalog catalogBody
  where
   catalogBody :: [Text]
-  catalogBody = functionalities ++ [emptyLine] ++ resources ++ [emptyLine] ++ options sensor
-
-  functionalities :: [Text]
-  functionalities = addFunctionalities sensorDetectionFunctionName dimensionlessUnit ratioSamples
-
-  resources :: [Text]
-  resources =
-    [ addResource fixedCostName costUnit
-    , addResource recurringCostName costUnit
-    ]
+  catalogBody =
+    sensorFunctionalities ++ [emptyLine] ++ sensorResources ++ [emptyLine] ++ options sensor
 
   options :: SensorData -> [Text]
   options sensor = map (sensorOption sensor) [1 .. costOptions]
@@ -96,13 +97,24 @@ makeSensorCatalog sensor = makeCatalog catalogBody
 sensorCatalogs :: [(Text, Text)]
 sensorCatalogs = zip (map sensorName sensors) (map makeSensorCatalog sensors)
 
+interface :: Text
+interface = makeInterface $ sensorResources ++ [emptyLine] ++ sensorFunctionalities
+
 writeCatalog :: (Text, Text) -> IO ()
 writeCatalog (name, catalog) = writeFileText (root </> sensorsLib </> toString name ++ extension) catalog
 
 writeSensorCatalogs :: IO ()
 writeSensorCatalogs = mapM_ writeCatalog sensorCatalogs
 
+writeSensorInterface :: IO ()
+writeSensorInterface =
+  writeFileText
+    (root </> sensorsLib </> sensorInterfaceName ++ interfaceExtension)
+    interface
+
 main :: IO ()
-main = writeSensorCatalogs
+main = do
+  writeSensorCatalogs
+  writeSensorInterface
 
 -- main = mapM_ plot sensorHeatmaps

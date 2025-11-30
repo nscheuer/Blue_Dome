@@ -1,5 +1,8 @@
-mcdp {
-  requires cost [USD]
-  provides detection [dimensionless x dimensionless x dimensionless x dimensionless x dimensionless]
-  ignore unconnected
+interface {
+  requires fixedCost [USD]
+  requires recurringCost [USD]
+
+  provides d1 [dimensionless]
+  provides d2 [dimensionless]
+  provides d3 [dimensionless]
 }
