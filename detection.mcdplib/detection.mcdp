@@ -2,8 +2,8 @@ mcdp {
   sub selection = instance `sensors.selection
   sub time_to_impact_reduction = instance `time_to_impact_reduction
 
-  requires fixedCost for selection
-  requires recurringCost for selection
+  requires fixed_cost for selection
+  requires recurring_cost for selection
   provides time_to_impact using time_to_impact_reduction
 
   d1 required by time_to_impact_reduction <= d1 provided by selection

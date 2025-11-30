@@ -3,8 +3,8 @@ catalog {
   provides d2 [dimensionless]
   provides d3 [dimensionless]
 
-  requires fixedCost [USD]
-  requires recurringCost [USD]
+  requires fixed_cost [USD]
+  requires recurring_cost [USD]
 
   0.1575644463605992, 0.1348744788384072, 0.0 ↤ atlas1 ↦ 5000000 USD, 2000000 USD
   0.2903023379642762, 0.2515578326348824, 0.0 ↤ atlas2 ↦ 10000000 USD, 4000000 USD

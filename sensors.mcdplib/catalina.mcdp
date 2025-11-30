@@ -3,8 +3,8 @@ catalog {
   provides d2 [dimensionless]
   provides d3 [dimensionless]
 
-  requires fixedCost [USD]
-  requires recurringCost [USD]
+  requires fixed_cost [USD]
+  requires recurring_cost [USD]
 
   2.4240684055476747e-2, 2.2396226752117165e-2, 0.0 ↤ catalina1 ↦ 10000000 USD, 3000000 USD
   4.789375734747603e-2, 4.429086253150205e-2, 0.0 ↤ catalina2 ↦ 20000000 USD, 6000000 USD

@@ -1,6 +1,6 @@
 mcdp {
-  requires fixedCost [USD]
-  requires recurringCost [USD]
+  requires fixed_cost [USD]
+  requires recurring_cost [USD]
 
   provides d1 [dimensionless]
   provides d2 [dimensionless]
@@ -13,8 +13,8 @@ mcdp {
   sub selection1_1 = instance `selection1_1
   sub selection1_2 = instance `selection1_2
 
-  required fixedCost >= fixedCost required by selection1_1 + fixedCost required by selection1_2
-  required recurringCost >= recurringCost required by selection1_1 + recurringCost required by selection1_2
+  required fixed_cost >= fixed_cost required by selection1_1 + fixed_cost required by selection1_2
+  required recurring_cost >= recurring_cost required by selection1_1 + recurring_cost required by selection1_2
 
   x required by p1 <= d1 provided by selection1_1
   y required by p1 <= d1 provided by selection1_2

@@ -197,10 +197,10 @@ dimensionlessUnit :: Text
 dimensionlessUnit = "dimensionless"
 
 fixedCostName :: Text
-fixedCostName = "fixedCost"
+fixedCostName = "fixed_cost"
 
 recurringCostName :: Text
-recurringCostName = "recurringCost"
+recurringCostName = "recurring_cost"
 
 p1Name :: Text
 p1Name = "x"

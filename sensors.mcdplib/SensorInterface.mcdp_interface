@@ -1,6 +1,6 @@
 interface {
-  requires fixedCost [USD]
-  requires recurringCost [USD]
+  requires fixed_cost [USD]
+  requires recurring_cost [USD]
 
   provides d1 [dimensionless]
   provides d2 [dimensionless]

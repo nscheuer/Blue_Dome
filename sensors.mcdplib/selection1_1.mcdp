@@ -1,6 +1,6 @@
 mcdp {
-  requires fixedCost [USD]
-  requires recurringCost [USD]
+  requires fixed_cost [USD]
+  requires recurring_cost [USD]
 
   provides d1 [dimensionless]
   provides d2 [dimensionless]
@@ -13,8 +13,8 @@ mcdp {
   sub starrs = instance `starrs
   sub catalina = instance `catalina
 
-  required fixedCost >= fixedCost required by starrs + fixedCost required by catalina
-  required recurringCost >= recurringCost required by starrs + recurringCost required by catalina
+  required fixed_cost >= fixed_cost required by starrs + fixed_cost required by catalina
+  required recurring_cost >= recurring_cost required by starrs + recurring_cost required by catalina
 
   x required by p1 <= d1 provided by starrs
   y required by p1 <= d1 provided by catalina

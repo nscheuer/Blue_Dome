@@ -3,8 +3,8 @@ catalog {
   provides d2 [dimensionless]
   provides d3 [dimensionless]
 
-  requires fixedCost [USD]
-  requires recurringCost [USD]
+  requires fixed_cost [USD]
+  requires recurring_cost [USD]
 
   0.22221435073655582, 0.21847638349204002, 0.0 ↤ ztf1 ↦ 20000000 USD, 5000000 USD
   0.3950494837998426, 0.38922083684031905, 0.0 ↤ ztf2 ↦ 40000000 USD, 10000000 USD

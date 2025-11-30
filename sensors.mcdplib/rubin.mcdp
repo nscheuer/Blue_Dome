@@ -3,8 +3,8 @@ catalog {
   provides d2 [dimensionless]
   provides d3 [dimensionless]
 
-  requires fixedCost [USD]
-  requires recurringCost [USD]
+  requires fixed_cost [USD]
+  requires recurring_cost [USD]
 
   0.1454441043328608, 0.1454346363348591, 0.0 ↤ rubin1 ↦ 700000000 USD, 50000000 USD
   0.2697342211805335, 0.2697180392238655, 0.0 ↤ rubin2 ↦ 1400000000 USD, 100000000 USD

@@ -1,6 +1,6 @@
 mcdp {
-  requires fixedCost [USD]
-  requires recurringCost [USD]
+  requires fixed_cost [USD]
+  requires recurring_cost [USD]
 
   provides d1 [dimensionless]
   provides d2 [dimensionless]
@@ -13,8 +13,8 @@ mcdp {
   sub atlas = instance `atlas
   sub ztf = instance `ztf
 
-  required fixedCost >= fixedCost required by atlas + fixedCost required by ztf
-  required recurringCost >= recurringCost required by atlas + recurringCost required by ztf
+  required fixed_cost >= fixed_cost required by atlas + fixed_cost required by ztf
+  required recurring_cost >= recurring_cost required by atlas + recurring_cost required by ztf
 
   x required by p1 <= d1 provided by atlas
   y required by p1 <= d1 provided by ztf
