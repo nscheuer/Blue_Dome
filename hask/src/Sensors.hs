@@ -207,7 +207,7 @@ writeProbabilityCatalog =
 
 writeSelectionPair :: Int -> (Int, (String, String)) -> IO String
 writeSelectionPair i (j, (sub1, sub2)) = do
-  let name = selectionName ++ show i ++ dash ++ show j
+  let name = selectionName ++ show i ++ underscore ++ show j
   writeFileText (root </> sensorsLib </> name ++ extension) (makeSelectionDP sub1 sub2)
   return name
 

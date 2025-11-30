@@ -53,8 +53,8 @@ metersPerAU = 1.496e11
 fileSep :: String
 fileSep = "/"
 
-dash :: String
-dash = "-"
+underscore :: String
+underscore = "_"
 
 extension :: String
 extension = ".mcdp"

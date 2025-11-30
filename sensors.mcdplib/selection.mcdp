@@ -10,19 +10,19 @@ mcdp {
   sub p2 = instance `probability
   sub p3 = instance `probability
 
-  sub selection2-1 = instance `selection2-1
+  sub selection2_1 = instance `selection2_1
   sub rubin = instance `rubin
 
-  required fixedCost >= fixedCost required by selection2-1 + fixedCost required by rubin
-  required recurringCost >= recurringCost required by selection2-1 + recurringCost required by rubin
+  required fixedCost >= fixedCost required by selection2_1 + fixedCost required by rubin
+  required recurringCost >= recurringCost required by selection2_1 + recurringCost required by rubin
 
-  x required by p1 <= d1 provided by selection2-1
+  x required by p1 <= d1 provided by selection2_1
   y required by p1 <= d1 provided by rubin
   provided d1 <= z provided by p1
-  x required by p2 <= d2 provided by selection2-1
+  x required by p2 <= d2 provided by selection2_1
   y required by p2 <= d2 provided by rubin
   provided d2 <= z provided by p2
-  x required by p3 <= d3 provided by selection2-1
+  x required by p3 <= d3 provided by selection2_1
   y required by p3 <= d3 provided by rubin
   provided d3 <= z provided by p3
 }
