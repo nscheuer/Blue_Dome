@@ -154,10 +154,13 @@ makeSelectionDP sub1 sub2 =
   s2 = toText sub2
 
   probabilityInstances :: [Text]
-  probabilityInstances = replicate ratioSamples $ addInstance probabilityName
+  probabilityInstances =
+    map
+      (\i -> addInstance (probabilityName <> show i) (toText probabilityCatalogName))
+      [1 .. ratioSamples]
 
   instances :: [Text]
-  instances = map addInstance [s1, s2]
+  instances = map addSingleInstance [s1, s2]
 
   costReq :: [Text]
   costReq =

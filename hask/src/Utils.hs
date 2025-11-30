@@ -110,9 +110,13 @@ addFunctionality name units = startFunctionality <> padSpace name <> lbrack <> u
 addResource :: Text -> Text -> Text
 addResource name units = startResource <> padSpace name <> lbrack <> units <> rbrack
 
+-- sub VARIABLE = instance `NAME
+addInstance :: Text -> Text -> Text
+addInstance var name = startSub <> padSpace var <> equals <> padSpace instanceKeyword <> backtick <> name
+
 -- sub NAME = instance `NAME
-addInstance :: Text -> Text
-addInstance name = startSub <> padSpace name <> equals <> padSpace instanceKeyword <> backtick <> name
+addSingleInstance :: Text -> Text
+addSingleInstance name = addInstance name name
 
 -- ...PROVIDES ↤ NAME ↦ ...REQUIRES
 -- both sides should include units

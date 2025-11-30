@@ -6,9 +6,9 @@ mcdp {
   provides d2 [dimensionless]
   provides d3 [dimensionless]
 
-  sub p = instance `p
-  sub p = instance `p
-  sub p = instance `p
+  sub p1 = instance `probability
+  sub p2 = instance `probability
+  sub p3 = instance `probability
 
   sub starrs = instance `starrs
   sub catalina = instance `catalina
