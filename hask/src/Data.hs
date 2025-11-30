@@ -7,6 +7,7 @@ starrs :: SensorData
 starrs =
   SensorData
     { survey = "Pan-STARRS (PS1/PS2)"
+    , sensorName = "starrs"
     , limit = 22.0
     , coverage = SquareDegree 1000
     , fixedCost = 1e8
@@ -17,6 +18,7 @@ catalina :: SensorData
 catalina =
   SensorData
     { survey = "Catalina Sky Survey (CSS 0.7m)"
+    , sensorName = "catalina"
     , limit = 19.5
     , coverage = SquareDegree 1000
     , fixedCost = 1e7
@@ -27,6 +29,7 @@ atlas :: SensorData
 atlas =
   SensorData
     { survey = "ATLAS (per unit)"
+    , sensorName = "atlas"
     , limit = 19.0
     , coverage = SquareDegree 6500
     , fixedCost = 5e6
@@ -37,6 +40,7 @@ ztf :: SensorData
 ztf =
   SensorData
     { survey = "ZTF (Palomar 48)"
+    , sensorName = "ztf"
     , limit = 20.6
     , coverage = SquareDegree 9167
     , fixedCost = 2e7
@@ -47,6 +51,7 @@ rubin :: SensorData
 rubin =
   SensorData
     { survey = "Rubin/LSST (main lens)"
+    , sensorName = "rubin"
     , limit = 24.5
     , coverage = SquareDegree 6000
     , fixedCost = 7e8

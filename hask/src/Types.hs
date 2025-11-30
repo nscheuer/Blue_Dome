@@ -26,10 +26,11 @@ data Length = Meter Double | Kilometer Double | AU Double
 
 -- sensor data and other statistics
 data SensorData = SensorData
-  { survey :: String
+  { survey :: Text
+  , sensorName :: Text
   , limit :: Double -- minimum brightness that can be detected
   , coverage :: SolidAngle -- per night
   -- costs are in USD
-  , fixedCost :: Integer
-  , recurringCost :: Integer -- annual cost of maintenance
+  , fixedCost :: Int
+  , recurringCost :: Int -- annual cost of maintenance
   }

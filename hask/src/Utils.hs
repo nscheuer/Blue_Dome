@@ -3,7 +3,7 @@ module Utils where
 import Constants
 import Types
 
-import Data.Text (replace)
+import Data.Text as T (intercalate, replace)
 
 -- unit conversion
 squareDegrees :: SolidAngle -> Double
@@ -63,8 +63,50 @@ linspaceToRatio (xmin, xmax) (ymin, ymax) t = (xmin + (xmax - xmin) * t) / (ymax
 
 -- join paths
 (</>) :: String -> String -> String
-a </> b = a ++ "/" ++ b
+a </> b = a ++ fileSep ++ b
 
 -- find and replace
 hydrate :: Text -> Text -> Text -> Text
 hydrate old = replace (delim <> old <> delim)
+
+-- serialize
+stringLines :: [Text] -> Text
+stringLines = T.intercalate newline
+
+indent :: [Text] -> [Text]
+indent = map (indentation <>)
+
+-- catalog {...}
+makeCatalog :: [Text] -> Text
+makeCatalog lines = stringLines $ [startCatalog] ++ indent lines ++ [endCatalog, emptyLine]
+
+-- provides NAME [UNITS]
+addFunctionality :: Text -> Text -> Text
+addFunctionality name units = startFunctionality <> space <> name <> space <> lbrack <> units <> rbrack
+
+-- requires NAME [UNITS]
+addResource :: Text -> Text -> Text
+addResource name units = startResource <> space <> name <> space <> lbrack <> units <> rbrack
+
+-- ...PROVIDES ↤ NAME ↦ ...REQUIRES
+-- both sides should include units
+addOption :: [Text] -> Text -> [Text] -> Text
+addOption provides name requires =
+  provided
+    <> space
+    <> optionProvides
+    <> space
+    <> name
+    <> space
+    <> optionRequires
+    <> space
+    <> required
+ where
+  provided :: Text
+  provided = T.intercalate listSep provides
+
+  required :: Text
+  required = T.intercalate listSep requires
+
+addFunctionalities :: Text -> Text -> Int -> [Text]
+addFunctionalities name units count = map (\i -> addFunctionality (name <> show i) units) [1 .. count]

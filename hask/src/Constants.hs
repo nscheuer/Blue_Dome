@@ -14,6 +14,9 @@ sizeSamples = 10
 ratioSamples :: Int
 ratioSamples = 10
 
+costOptions :: Int
+costOptions = 10
+
 rangeBounds :: Bounds Length
 rangeBounds = (AU 0, AU 5)
 
@@ -43,6 +46,74 @@ metersPerKilometer = 1e3
 metersPerAU :: Double
 metersPerAU = 1.496e11
 
+-- file paths
+fileSep :: String
+fileSep = "/"
+
+extension :: String
+extension = ".mcdp"
+
+root :: String
+root = ".."
+
+sensorsLib :: String
+sensorsLib = "sensors.mcdplib"
+
 -- delimiter for in-line replacements
 delim :: Text
 delim = toText "%"
+
+-- mcdp syntax
+startCatalog :: Text
+startCatalog = "catalog {"
+
+endCatalog :: Text
+endCatalog = "}"
+
+emptyLine :: Text
+emptyLine = ""
+
+newline :: Text
+newline = "\n"
+
+space :: Text
+space = " "
+
+listSep :: Text
+listSep = "," <> space
+
+lbrack :: Text
+lbrack = "["
+
+rbrack :: Text
+rbrack = "]"
+
+indentation :: Text
+indentation = toText $ replicate 2 ' '
+
+startFunctionality :: Text
+startFunctionality = "provides"
+
+startResource :: Text
+startResource = "requires"
+
+optionProvides :: Text
+optionProvides = "↤"
+
+optionRequires :: Text
+optionRequires = "↦"
+
+sensorDetectionFunctionName :: Text
+sensorDetectionFunctionName = "d"
+
+dimensionlessUnit :: Text
+dimensionlessUnit = "dimensionless"
+
+fixedCostName :: Text
+fixedCostName = "fixedCost"
+
+recurringCostName :: Text
+recurringCostName = "recurringCost"
+
+costUnit :: Text
+costUnit = "USD"

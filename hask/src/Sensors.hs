@@ -59,10 +59,50 @@ ratioSampled = map (linspaceToRatio rangeAUBounds sizeKmBounds) $ linspace ratio
 evalSamples :: SensorData -> [Double]
 evalSamples sensor = map (parameterizedSensorDistribution sensor) ratioSampled
 
+evalSamplesCombined :: SensorData -> Int -> [Double]
+evalSamplesCombined sensor i = map (\x -> 1 - (1 - x) ^ i) $ evalSamples sensor
+
 sensorSamples :: [[Double]]
 sensorSamples = map evalSamples sensors
 
--- todo: write sensor samples to sensor files as yaml catalogs
+sensorOption :: SensorData -> Int -> Text
+sensorOption sensor i = addOption functionalitySamples (sensorName sensor <> show i) costs
+ where
+  costs :: [Text]
+  costs =
+    map (\x -> show x <> space <> costUnit) [i * fixedCost sensor, i * recurringCost sensor]
+
+  functionalitySamples :: [Text]
+  functionalitySamples = map show $ evalSamplesCombined sensor i
+
+makeSensorCatalog :: SensorData -> Text
+makeSensorCatalog sensor = makeCatalog catalogBody
+ where
+  catalogBody :: [Text]
+  catalogBody = functionalities ++ [emptyLine] ++ resources ++ [emptyLine] ++ options sensor
+
+  functionalities :: [Text]
+  functionalities = addFunctionalities sensorDetectionFunctionName dimensionlessUnit ratioSamples
+
+  resources :: [Text]
+  resources =
+    [ addResource fixedCostName costUnit
+    , addResource recurringCostName costUnit
+    ]
+
+  options :: SensorData -> [Text]
+  options sensor = map (sensorOption sensor) [1 .. costOptions]
+
+sensorCatalogs :: [(Text, Text)]
+sensorCatalogs = zip (map sensorName sensors) (map makeSensorCatalog sensors)
+
+writeCatalog :: (Text, Text) -> IO ()
+writeCatalog (name, catalog) = writeFileText (root </> sensorsLib </> toString name ++ extension) catalog
+
+writeSensorCatalogs :: IO ()
+writeSensorCatalogs = mapM_ writeCatalog sensorCatalogs
 
 main :: IO ()
-main = mapM_ plot sensorHeatmaps
+main = writeSensorCatalogs
+
+-- main = mapM_ plot sensorHeatmaps
