@@ -53,6 +53,9 @@ metersPerAU = 1.496e11
 fileSep :: String
 fileSep = "/"
 
+dash :: String
+dash = "-"
+
 extension :: String
 extension = ".mcdp"
 
@@ -71,11 +74,20 @@ sensorInterfaceName = "SensorInterface"
 probabilityCatalogName :: String
 probabilityCatalogName = "probability"
 
+selectionName :: String
+selectionName = "selection"
+
 -- delimiter for in-line replacements
 delim :: Text
-delim = toText "%"
+delim = "%"
 
 -- mcdp syntax
+startMCDP :: Text
+startMCDP = "mcdp {"
+
+endMCDP :: Text
+endMCDP = "}"
+
 startCatalog :: Text
 startCatalog = "catalog {"
 
@@ -106,6 +118,21 @@ lbrack = "["
 rbrack :: Text
 rbrack = "]"
 
+equals :: Text
+equals = "="
+
+ge :: Text
+ge = ">="
+
+le :: Text
+le = "<="
+
+plusSign :: Text
+plusSign = "+"
+
+backtick :: Text
+backtick = "`"
+
 indentation :: Text
 indentation = toText $ replicate 2 ' '
 
@@ -114,6 +141,24 @@ startFunctionality = "provides"
 
 startResource :: Text
 startResource = "requires"
+
+startSub :: Text
+startSub = "sub"
+
+instanceKeyword :: Text
+instanceKeyword = "instance"
+
+requiredKeyword :: Text
+requiredKeyword = "required"
+
+providedKeyword :: Text
+providedKeyword = "provided"
+
+requiredBy :: Text
+requiredBy = "required by"
+
+providedBy :: Text
+providedBy = "provided by"
 
 optionProvides :: Text
 optionProvides = "↤"

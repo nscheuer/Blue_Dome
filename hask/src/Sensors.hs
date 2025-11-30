@@ -7,6 +7,8 @@ import Plot
 import Types
 import Utils
 
+import System.Directory (renameFile)
+
 rangeAUBounds :: Bounds Double
 rangeAUBounds = mapBounds au rangeBounds
 
@@ -129,6 +131,59 @@ probabilityCatalog =
   functionalities :: [Text]
   functionalities = [addFunctionality pName dimensionlessUnit]
 
+makeSelectionDP :: String -> String -> Text
+makeSelectionDP sub1 sub2 =
+  makeMCDP
+    ( sensorResources
+        ++ [emptyLine]
+        ++ sensorFunctionalities
+        ++ [emptyLine]
+        ++ probabilityInstances
+        ++ [emptyLine]
+        ++ instances
+        ++ [emptyLine]
+        ++ costReq
+        ++ [emptyLine]
+        ++ funProv
+    )
+ where
+  s1 :: Text
+  s1 = toText sub1
+
+  s2 :: Text
+  s2 = toText sub2
+
+  probabilityInstances :: [Text]
+  probabilityInstances = addFunctionalities probabilityName dimensionlessUnit ratioSamples
+
+  instances :: [Text]
+  instances = map addInstance [s1, s2]
+
+  costReq :: [Text]
+  costReq =
+    [ required fixedCostName
+        `greaterThan` ((fixedCostName `reqBy` s1) `plus` (fixedCostName `reqBy` s2))
+    , required recurringCostName
+        `greaterThan` ((recurringCostName `reqBy` s1) `plus` (recurringCostName `reqBy` s2))
+    ]
+
+  funProv :: [Text]
+  funProv = concatMap funProvSample [1 .. ratioSamples]
+
+  funProvSample :: Int -> [Text]
+  funProvSample i =
+    let
+      prob :: Text
+      prob = probabilityName <> show i
+
+      sample :: Text
+      sample = sensorDetectionFunctionName <> show i
+     in
+      [ (p1Name `reqBy` prob) `lessThan` (sample `provBy` s1)
+      , (p2Name `reqBy` prob) `lessThan` (sample `provBy` s2)
+      , provided sample `lessThan` (pName `provBy` prob)
+      ]
+
 writeCatalog :: (Text, Text) -> IO ()
 writeCatalog (name, catalog) = writeFileText (root </> sensorsLib </> toString name ++ extension) catalog
 
@@ -147,10 +202,49 @@ writeProbabilityCatalog =
     (root </> sensorsLib </> probabilityCatalogName ++ extension)
     probabilityCatalog
 
+writeSelectionPair :: Int -> (Int, (String, String)) -> IO String
+writeSelectionPair i (j, (sub1, sub2)) = do
+  let name = selectionName ++ show i ++ dash ++ show j
+  writeFileText (root </> sensorsLib </> name ++ extension) (makeSelectionDP sub1 sub2)
+  return name
+
+writeSelection :: Int -> [String] -> IO (Maybe String)
+writeSelection i subproblems =
+  if length subproblems == 1
+    then return (viaNonEmpty head subproblems)
+    else do
+      next <- written
+      writeSelection (i + 1) (next ++ remaining)
+ where
+  tasks :: ([(String, String)], [String])
+  tasks = pair subproblems
+
+  remaining :: [String]
+  remaining = snd tasks
+
+  -- group subproblems into disjoint pairs and enumerate them
+  pairs :: [(Int, (String, String))]
+  pairs = zip [1 ..] (fst tasks)
+
+  -- write relevant DPs for combining subproblems
+  written :: IO [String]
+  written = mapM (writeSelectionPair i) pairs
+
+writeSensorSelection :: IO ()
+writeSensorSelection = do
+  block <- writeSelection 1 (map (toString . sensorName) sensors)
+  case block of
+    Just name ->
+      renameFile
+        (root </> sensorsLib </> name ++ extension)
+        (root </> sensorsLib </> selectionName ++ extension)
+    Nothing -> putStrLn "No selection written"
+
 main :: IO ()
 main = do
   writeSensorCatalogs
   writeSensorInterface
   writeProbabilityCatalog
+  writeSensorSelection
 
 -- main = mapM_ plot sensorHeatmaps

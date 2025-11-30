@@ -36,6 +36,7 @@ executable sensors
 
   build-depends:
     base,
+    directory,
     granite,
     regex-compat,
     relude

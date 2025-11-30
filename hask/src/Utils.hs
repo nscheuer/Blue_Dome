@@ -64,6 +64,14 @@ ratioBounds (xmin, xmax) (ymin, ymax) = (xmin / ymax, xmax / ymin)
 linspaceToRatio :: Bounds Double -> Bounds Double -> UnitInterval -> Double
 linspaceToRatio (xmin, xmax) (ymin, ymax) t = (xmin + (xmax - xmin) * t) / (ymax + (ymin - ymax) * t)
 
+-- task division
+pair :: [a] -> ([(a, a)], [a])
+pair [] = ([], [])
+pair [x] = ([], [x])
+pair (x : y : xs) = ((x, y) : paired, rem)
+ where
+  (paired, rem) = pair xs
+
 -- join paths
 (</>) :: String -> String -> String
 a </> b = a ++ fileSep ++ b
@@ -79,6 +87,9 @@ stringLines = T.intercalate newline
 indent :: [Text] -> [Text]
 indent = map (indentation <>)
 
+padSpace :: Text -> Text
+padSpace t = space <> t <> space
+
 -- interface {...}
 makeInterface :: [Text] -> Text
 makeInterface lines = stringLines $ [startInterface] ++ indent lines ++ [endInterface, emptyLine]
@@ -87,26 +98,30 @@ makeInterface lines = stringLines $ [startInterface] ++ indent lines ++ [endInte
 makeCatalog :: [Text] -> Text
 makeCatalog lines = stringLines $ [startCatalog] ++ indent lines ++ [endCatalog, emptyLine]
 
+-- mcdp {...}
+makeMCDP :: [Text] -> Text
+makeMCDP lines = stringLines $ [startMCDP] ++ indent lines ++ [endMCDP, emptyLine]
+
 -- provides NAME [UNITS]
 addFunctionality :: Text -> Text -> Text
-addFunctionality name units = startFunctionality <> space <> name <> space <> lbrack <> units <> rbrack
+addFunctionality name units = startFunctionality <> padSpace name <> lbrack <> units <> rbrack
 
 -- requires NAME [UNITS]
 addResource :: Text -> Text -> Text
-addResource name units = startResource <> space <> name <> space <> lbrack <> units <> rbrack
+addResource name units = startResource <> padSpace name <> lbrack <> units <> rbrack
+
+-- sub NAME = instance `NAME
+addInstance :: Text -> Text
+addInstance name = startSub <> padSpace name <> equals <> padSpace instanceKeyword <> backtick <> name
 
 -- ...PROVIDES ↤ NAME ↦ ...REQUIRES
 -- both sides should include units
 addOption :: [Text] -> Text -> [Text] -> Text
 addOption provides name requires =
   provided
-    <> space
-    <> optionProvides
-    <> space
+    <> padSpace optionProvides
     <> name
-    <> space
-    <> optionRequires
-    <> space
+    <> padSpace optionRequires
     <> required
  where
   provided :: Text
@@ -117,3 +132,24 @@ addOption provides name requires =
 
 addFunctionalities :: Text -> Text -> Int -> [Text]
 addFunctionalities name units count = map (\i -> addFunctionality (name <> show i) units) [1 .. count]
+
+required :: Text -> Text
+required name = requiredKeyword <> space <> name
+
+provided :: Text -> Text
+provided name = providedKeyword <> space <> name
+
+reqBy :: Text -> Text -> Text
+resource `reqBy` dp = resource <> padSpace requiredBy <> dp
+
+provBy :: Text -> Text -> Text
+resource `provBy` dp = resource <> padSpace providedBy <> dp
+
+greaterThan :: Text -> Text -> Text
+a `greaterThan` b = a <> padSpace ge <> b
+
+lessThan :: Text -> Text -> Text
+a `lessThan` b = a <> padSpace le <> b
+
+plus :: Text -> Text -> Text
+a `plus` b = a <> padSpace plusSign <> b
