@@ -6,9 +6,9 @@ mcdp {
   provides d2 [dimensionless]
   provides d3 [dimensionless]
 
-  provides p1 [dimensionless]
-  provides p2 [dimensionless]
-  provides p3 [dimensionless]
+  sub p = instance `p
+  sub p = instance `p
+  sub p = instance `p
 
   sub atlas = instance `atlas
   sub ztf = instance `ztf

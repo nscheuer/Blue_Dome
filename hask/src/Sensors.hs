@@ -154,7 +154,7 @@ makeSelectionDP sub1 sub2 =
   s2 = toText sub2
 
   probabilityInstances :: [Text]
-  probabilityInstances = addFunctionalities probabilityName dimensionlessUnit ratioSamples
+  probabilityInstances = replicate ratioSamples $ addInstance probabilityName
 
   instances :: [Text]
   instances = map addInstance [s1, s2]
