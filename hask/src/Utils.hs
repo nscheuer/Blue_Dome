@@ -42,6 +42,9 @@ linspace n (start, end) = [start, start + step .. end]
 stitch :: [Double] -> [Double] -> [[(Double, Double)]]
 stitch xs ys = [[(x, y) | y <- ys] | x <- xs]
 
+diag :: [Double] -> [[(Double, Double)]]
+diag xs = stitch xs xs
+
 broadcast :: ((Double, Double) -> a) -> [[(Double, Double)]] -> Grid a
 broadcast f array = [[((x, y), f (x, y)) | (x, y) <- row] | row <- array]
 

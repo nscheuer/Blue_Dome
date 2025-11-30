@@ -14,6 +14,9 @@ sizeSamples = 10
 ratioSamples :: Int
 ratioSamples = 3
 
+probabilitySamples :: Int
+probabilitySamples = 10
+
 costOptions :: Int
 costOptions = 10
 
@@ -64,6 +67,9 @@ sensorsLib = "sensors.mcdplib"
 
 sensorInterfaceName :: String
 sensorInterfaceName = "SensorInterface"
+
+probabilityCatalogName :: String
+probabilityCatalogName = "probability"
 
 -- delimiter for in-line replacements
 delim :: Text
@@ -118,6 +124,9 @@ optionRequires = "↦"
 sensorDetectionFunctionName :: Text
 sensorDetectionFunctionName = "d"
 
+probabilityName :: Text
+probabilityName = "p"
+
 dimensionlessUnit :: Text
 dimensionlessUnit = "dimensionless"
 
@@ -126,6 +135,15 @@ fixedCostName = "fixedCost"
 
 recurringCostName :: Text
 recurringCostName = "recurringCost"
+
+p1Name :: Text
+p1Name = "x"
+
+p2Name :: Text
+p2Name = "y"
+
+pName :: Text
+pName = "z"
 
 costUnit :: Text
 costUnit = "USD"

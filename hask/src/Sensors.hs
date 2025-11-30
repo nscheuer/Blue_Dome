@@ -100,6 +100,35 @@ sensorCatalogs = zip (map sensorName sensors) (map makeSensorCatalog sensors)
 interface :: Text
 interface = makeInterface $ sensorResources ++ [emptyLine] ++ sensorFunctionalities
 
+probabilitySpace :: [(Double, Double)]
+probabilitySpace = concat $ diag linearSamples
+ where
+  linearSamples :: [Double]
+  linearSamples = linspace probabilitySamples (0, 1)
+
+probabilityImplementations :: [Text]
+probabilityImplementations = zipWith implementation [1 ..] probabilitySpace
+ where
+  implementation :: Int -> (Double, Double) -> Text
+  implementation i (x, y) = addOption [show (fuse x y)] (probabilityName <> show i) (map show [x, y])
+
+  fuse :: Double -> Double -> Double
+  fuse x y = 1 - (1 - x) * (1 - y)
+
+probabilityCatalog :: Text
+probabilityCatalog =
+  makeCatalog $
+    resources ++ [emptyLine] ++ functionalities ++ [emptyLine] ++ probabilityImplementations
+ where
+  resources :: [Text]
+  resources =
+    [ addResource p1Name dimensionlessUnit
+    , addResource p2Name dimensionlessUnit
+    ]
+
+  functionalities :: [Text]
+  functionalities = [addFunctionality pName dimensionlessUnit]
+
 writeCatalog :: (Text, Text) -> IO ()
 writeCatalog (name, catalog) = writeFileText (root </> sensorsLib </> toString name ++ extension) catalog
 
@@ -112,9 +141,16 @@ writeSensorInterface =
     (root </> sensorsLib </> sensorInterfaceName ++ interfaceExtension)
     interface
 
+writeProbabilityCatalog :: IO ()
+writeProbabilityCatalog =
+  writeFileText
+    (root </> sensorsLib </> probabilityCatalogName ++ extension)
+    probabilityCatalog
+
 main :: IO ()
 main = do
   writeSensorCatalogs
   writeSensorInterface
+  writeProbabilityCatalog
 
 -- main = mapM_ plot sensorHeatmaps

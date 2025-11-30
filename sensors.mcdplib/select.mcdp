@@ -6,13 +6,12 @@ mcdp {
   provides d2 [dimensionless]
   provides d3 [dimensionless]
 
-  sub starrs = (load starrs)
-  sub rubin = (load rubin)
+  sub starrs = instance `starrs
+  sub rubin = instance `rubin
 
   required fixedCost >= fixedCost required by starrs + fixedCost required by rubin
   required recurringCost >= recurringCost required by starrs + recurringCost required by rubin
 
-  provided d1 <= 1 - (1 - d1 provided by starrs) * (1 - d1 provided by rubin)
-  provided d2 <= 1 - (1 - d2 provided by starrs) * (1 - d2 provided by rubin)
-  provided d3 <= 1 - (1 - d3 provided by starrs) * (1 - d3 provided by rubin)
+  x1 = d1 provided by starrs
+  x2 = d1 provided by rubin
 }
