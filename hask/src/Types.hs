@@ -8,6 +8,7 @@ type Probability = UnitInterval
 -- aliases
 type Dist = Double -> Probability
 type Dist2D = (Double, Double) -> Probability
+type PDF a = a -> Probability
 
 -- (inverse spread (Q), maximum probability)
 type DistParams = (PositiveReal, UnitInterval)
@@ -23,6 +24,8 @@ type Heatmap = Grid Probability
 -- units
 data SolidAngle = SquareDegree Double | Steradian Double
 data Length = Meter Double | Kilometer Double | AU Double
+data Time = Second Double | Day Double | Year Double
+type Velocity = (Length, Time)
 
 -- sensor data and other statistics
 data SensorData = SensorData

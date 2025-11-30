@@ -3,6 +3,7 @@ module Utils where
 import Constants
 import Types
 
+import Data.Foldable (minimumBy)
 import Data.Text as T (intercalate, replace)
 
 -- unit conversion
@@ -28,6 +29,72 @@ au :: Length -> Double
 au (Meter x) = x / metersPerAU
 au (Kilometer x) = au (Meter (x * metersPerKilometer))
 au (AU x) = x
+
+seconds :: Time -> Double
+seconds (Second x) = x
+seconds (Day x) = x * secondsPerDay
+seconds (Year x) = x * (daysPerYear * secondsPerDay)
+
+days :: Time -> Double
+days (Second x) = x / secondsPerDay
+days (Day x) = x
+days (Year x) = days (Second (x * daysPerYear * secondsPerDay))
+
+years :: Time -> Double
+years (Second x) = x / (daysPerYear * secondsPerDay)
+years (Day x) = x / daysPerYear
+years (Year x) = x
+
+metersPerSecond :: Velocity -> Double
+metersPerSecond (l, t) = meters l / seconds t
+
+kilometersPerSecond :: Velocity -> Double
+kilometersPerSecond (l, t) = kilometers l / seconds t
+
+-- distributions
+sizePDF :: PDF Length
+sizePDF size
+  | s <= smin = 0
+  | s >= smax = 1
+  | otherwise = c * s ** (-(sizeDistB + 1))
+ where
+  s :: Double
+  s = kilometers size
+
+  c :: Double
+  c = sizeDistB / (smin ** (-sizeDistB) - smax ** (-sizeDistB))
+
+  smin :: Double
+  smin = (kilometers . fst) sizeBounds
+
+  smax :: Double
+  smax = (kilometers . snd) sizeBounds
+
+lerp :: UnitInterval -> Double -> Double -> Double
+lerp t a b = a + t * (b - a)
+
+interpolate :: Double -> [(Double, Double)] -> Double
+interpolate x xs = case xs of
+  [] -> 0
+  [(x1, y1)] -> y1
+  (x1, y1) : (x2, y2) : rest ->
+    if x < x1
+      then y1
+      else if x >= x2 then interpolate x rest else lerp ((x - x1) / (x2 - x1)) y1 y2
+
+velocityPDF :: PDF Velocity
+velocityPDF velocity = interpolate v (toList velocityBins) / area
+ where
+  v :: Double
+  v = kilometersPerSecond velocity
+
+  area :: Double
+  area =
+    sum $
+      zipWith
+        (\(x1, y1) (x2, y2) -> (x2 - x1) * (y1 + y2) / 2)
+        (toList velocityBins)
+        (tail velocityBins)
 
 -- type wrangling
 mapBounds :: (a -> b) -> Bounds a -> Bounds b
@@ -63,6 +130,9 @@ ratioBounds (xmin, xmax) (ymin, ymax) = (xmin / ymax, xmax / ymin)
 
 linspaceToRatio :: Bounds Double -> Bounds Double -> UnitInterval -> Double
 linspaceToRatio (xmin, xmax) (ymin, ymax) t = (xmin + (xmax - xmin) * t) / (ymax + (ymin - ymax) * t)
+
+findClosestIndex :: Double -> [(Int, Double)] -> Int
+findClosestIndex x enumeratedList = fst $ minimumBy (comparing snd) [(i, abs (x - r)) | (i, r) <- enumeratedList]
 
 -- task division
 pair :: [a] -> ([(a, a)], [a])
@@ -137,6 +207,9 @@ addOption provides name requires =
 addFunctionalities :: Text -> Text -> Int -> [Text]
 addFunctionalities name units count = map (\i -> addFunctionality (name <> show i) units) [1 .. count]
 
+addResources :: Text -> Text -> Int -> [Text]
+addResources name units count = map (\i -> addResource (name <> show i) units) [1 .. count]
+
 required :: Text -> Text
 required name = requiredKeyword <> space <> name
 
@@ -165,3 +238,9 @@ a `lessThan` b = a <> padSpace le <> b
 
 plus :: Text -> Text -> Text
 a `plus` b = a <> padSpace plusSign <> b
+
+times :: Text -> Text -> Text
+a `times` b = a <> padSpace timesSign <> b
+
+mcdpSum :: [Text] -> Text
+mcdpSum = T.intercalate (padSpace plusSign)

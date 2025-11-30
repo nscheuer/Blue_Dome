@@ -58,6 +58,9 @@ rangeToSizeBounds = ratioBounds rangeAUBounds sizeKmBounds
 ratioSampled :: [Double]
 ratioSampled = map (linspaceToRatio rangeAUBounds sizeKmBounds) $ linspace ratioSamples (0, 1)
 
+enumeratedRatios :: [(Int, Double)]
+enumeratedRatios = zip [1 ..] ratioSampled
+
 evalSamples :: SensorData -> [Double]
 evalSamples sensor = map (parameterizedSensorDistribution sensor) ratioSampled
 
@@ -91,7 +94,7 @@ makeSensorCatalog sensor = makeCatalog catalogBody
  where
   catalogBody :: [Text]
   catalogBody =
-    sensorFunctionalities ++ [emptyLine] ++ sensorResources ++ [emptyLine] ++ options sensor
+    sensorFunctionalities ++ blank ++ sensorResources ++ blank ++ options sensor
 
   options :: SensorData -> [Text]
   options sensor = map (sensorOption sensor) [1 .. costOptions]
@@ -100,7 +103,7 @@ sensorCatalogs :: [(Text, Text)]
 sensorCatalogs = zip (map sensorName sensors) (map makeSensorCatalog sensors)
 
 interface :: Text
-interface = makeInterface $ sensorResources ++ [emptyLine] ++ sensorFunctionalities
+interface = makeInterface $ sensorResources ++ blank ++ sensorFunctionalities
 
 probabilitySpace :: [(Double, Double)]
 probabilitySpace = concat $ diag linearSamples
@@ -120,7 +123,7 @@ probabilityImplementations = zipWith implementation [1 ..] probabilitySpace
 probabilityCatalog :: Text
 probabilityCatalog =
   makeCatalog $
-    resources ++ [emptyLine] ++ functionalities ++ [emptyLine] ++ probabilityImplementations
+    resources ++ blank ++ functionalities ++ blank ++ probabilityImplementations
  where
   resources :: [Text]
   resources =
@@ -135,15 +138,15 @@ makeSelectionDP :: String -> String -> Text
 makeSelectionDP sub1 sub2 =
   makeMCDP
     ( sensorResources
-        ++ [emptyLine]
+        ++ blank
         ++ sensorFunctionalities
-        ++ [emptyLine]
+        ++ blank
         ++ probabilityInstances
-        ++ [emptyLine]
+        ++ blank
         ++ instances
-        ++ [emptyLine]
+        ++ blank
         ++ costReq
-        ++ [emptyLine]
+        ++ blank
         ++ funProv
     )
  where
@@ -188,7 +191,9 @@ makeSelectionDP sub1 sub2 =
       ]
 
 detection :: Text
-detection = makeMCDP (instances ++ [emptyLine] ++ outer ++ [emptyLine] ++ constraints)
+detection =
+  makeMCDP
+    (instances ++ blank ++ resources ++ blank ++ functionalities ++ blank ++ constraints)
  where
   sensorSelection :: Text
   sensorSelection = toText sensorSelectionName
@@ -205,12 +210,17 @@ detection = makeMCDP (instances ++ [emptyLine] ++ outer ++ [emptyLine] ++ constr
     , addSingleInstance timeToImpactReduction
     ]
 
-  outer :: [Text]
-  outer =
+  resources :: [Text]
+  resources =
     [ requiresFor fixedCostName sensorSelection
     , requiresFor recurringCostName sensorSelection
-    , providesUsing timeToImpactName timeToImpactReduction
     ]
+
+  functionalities :: [Text]
+  functionalities =
+    map
+      (\i -> providesUsing (timeToImpactName <> show i) timeToImpactReduction)
+      [1 .. length representativeTimes]
 
   constraints :: [Text]
   constraints = map makeConstraint [1 .. ratioSamples]
@@ -222,6 +232,47 @@ detection = makeMCDP (instances ++ [emptyLine] ++ outer ++ [emptyLine] ++ constr
       sample = sensorDetectionFunctionName <> show i
      in
       (sample `reqBy` timeToImpactReduction) `lessThan` (sample `provBy` sensorSelection)
+
+timeToImpactReduction :: Text
+timeToImpactReduction = makeMCDP (resources ++ blank ++ functionalities ++ blank ++ constraints)
+ where
+  resources :: [Text]
+  resources = addResources sensorDetectionFunctionName dimensionlessUnit ratioSamples
+
+  functionalities :: [Text]
+  functionalities = addFunctionalities timeToImpactName dimensionlessUnit (length representativeTimes)
+
+  constraints :: [Text]
+  constraints = zipWith makeConstraint [1 .. length representativeTimes] representativeTimes
+
+  makeConstraint :: Int -> Time -> Text
+  makeConstraint i time = provided (timeToImpactName <> show i) `lessThan` hazardIntegral (seconds time)
+
+  hazardIntegral :: Double -> Text
+  hazardIntegral t = mcdpSum (map (sizeIntegral t) $ linspace sizeSamples (mapBounds kilometers sizeBounds))
+
+  sizeIntegral :: Double -> Double -> Text
+  sizeIntegral t s =
+    mcdpSum
+      ( map (velocityIntegral t s) $
+          linspace velocitySamples (mapBounds kilometersPerSecond velocityBounds)
+      )
+
+  velocityIntegral :: Double -> Double -> Double -> Text
+  velocityIntegral t s v =
+    let
+      rhoV :: Double
+      rhoV = velocityPDF (Kilometer v, Second 1)
+
+      rhoS :: Double
+      rhoS = sizePDF (Kilometer s)
+     in
+      (sensorDetectionFunctionName <> show (fIndex t s v)) `times` show rhoV `times` show rhoS
+
+  -- find index between 1 and `ratioSamples` corresponding to the closest range/size ratio variable for calculating detection probability
+  -- `t` in seconds, `s` in km, `v` in km/s; but queried ratio is taken as range in AU divided by size in km
+  fIndex :: Double -> Double -> Double -> Int
+  fIndex t s v = let ratio = au (Kilometer (v * t)) / s in findClosestIndex ratio enumeratedRatios
 
 writeCatalog :: (Text, Text) -> IO ()
 writeCatalog (name, catalog) = writeFileText (root </> sensorsLib </> toString name ++ extension) catalog
@@ -282,6 +333,12 @@ writeSensorSelection = do
 writeDetection :: IO ()
 writeDetection = writeFileText (root </> detectionLib </> detectionName ++ extension) detection
 
+writeTimeToImpact :: IO ()
+writeTimeToImpact =
+  writeFileText
+    (root </> detectionLib </> timeToImpactReductionName ++ extension)
+    timeToImpactReduction
+
 main :: IO ()
 main = do
   writeSensorCatalogs
@@ -289,5 +346,6 @@ main = do
   writeProbabilityCatalog
   writeSensorSelection
   writeDetection
+  writeTimeToImpact
 
 -- main = mapM_ plot sensorHeatmaps

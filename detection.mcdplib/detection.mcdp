@@ -4,7 +4,10 @@ mcdp {
 
   requires fixed_cost for selection
   requires recurring_cost for selection
-  provides time_to_impact using time_to_impact_reduction
+
+  provides time_to_impact1 using time_to_impact_reduction
+  provides time_to_impact2 using time_to_impact_reduction
+  provides time_to_impact3 using time_to_impact_reduction
 
   d1 required by time_to_impact_reduction <= d1 provided by selection
   d2 required by time_to_impact_reduction <= d2 provided by selection
