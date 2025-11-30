@@ -2,7 +2,7 @@ cabal-version: 3.14
 -- Instructions on how to write this file are in the Cabal
 -- documentation, which can be found here:
 --   http://haskell.org/cabal/release/cabal-latest/doc/users-guide/
-name: dome 
+name: dome
 version: 1.0.0.0
 license: GPL-3.0-or-later
 license-file: LICENSE
@@ -23,13 +23,22 @@ flag threaded
 executable sensors
   hs-source-dirs: src
   main-is: Sensors.hs
-  other-modules: Constants, Utils, Types, Data, Plot
-  default-extensions: NumDecimals, OverloadedStrings
+  other-modules:
+    Constants
+    Data
+    Plot
+    Types
+    Utils
+
+  default-extensions:
+    NumDecimals
+    OverloadedStrings
+
   build-depends:
     base,
-    relude,
+    granite,
     regex-compat,
-    granite
+    relude
 
   default-language: GHC2024
   mixins:

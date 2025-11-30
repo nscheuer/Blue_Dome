@@ -14,7 +14,7 @@ template [
     requires cost for costs
     requires mass for redirection
     provides damage_reduced using redirection
-    
+
     time_to_impact required by redirection <= time_to_impact provided by detection
     cost required by detection <= detection_cost provided by costs
     cost required by redirection <= redirection_cost provided by costs

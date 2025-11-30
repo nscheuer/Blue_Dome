@@ -1,10 +1,10 @@
 mcdp {
   sub sensor_selection = instance `sensor_selection
-  sub time_to_impact_reduction = instance `time_to_impact_reduction 
-   
+  sub time_to_impact_reduction = instance `time_to_impact_reduction
+
   sensor_array required by time_to_impact_reduction <= sensor_array provided by sensor_selection
   requires cost for sensor_selection
   provides time_to_impact using time_to_impact_reduction
-  
+
   ignore unconnected
 }

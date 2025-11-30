@@ -1,6 +1,6 @@
 mcdp {
     sub drone = instance `drone
-    
+
     requires cost for drone
     requires mass for drone
     provides damage_reduced using drone

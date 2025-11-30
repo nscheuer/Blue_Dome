@@ -4,8 +4,8 @@ mcdp {
   provides mass_prop [kg]
   provides mass_impact [kg]
   provides c3 [dimensionless]
-  
+
   required mass >= provided mass_prop + provided mass_impact
-  
+
   ignore unconnected
 }

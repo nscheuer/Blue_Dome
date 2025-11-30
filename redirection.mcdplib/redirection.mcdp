@@ -2,16 +2,16 @@ mcdp {
   sub rocket = instance `rocket
   sub deflection = instance `deflection
   sub savings = instance `savings
-  
+
   requires cost for rocket
   requires mass for rocket
   requires time_to_impact for deflection
   provides damage_reduced using savings
-  
-  mass_prop required by deflection <= mass_prop provided by rocket 
+
+  mass_prop required by deflection <= mass_prop provided by rocket
   mass_impact required by deflection <= mass_impact provided by rocket
   c3 required by deflection <= c3 provided by rocket
   necessary_deflection required by savings <= necessary_deflection provided by deflection
-  
+
   ignore unconnected
 }
