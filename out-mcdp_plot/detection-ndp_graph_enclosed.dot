@@ -1,0 +1,48 @@
+digraph G {
+
+                graph [fontname = "STIX Two Math"];
+                 node [fontname = "STIX Two Math"];
+                 edge [fontname = "STIX Two Math"];
+                rankdir=LR;    nodesep=0;    esep=0;
+   subgraph cluster1 {
+      fontsize="14";
+      width="0.35000000000000003";
+      height="0.35000000000000003";
+      penwidth="1.2249999999999999";
+      shape="box";
+      style="rounded";
+      label="";
+      node6 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+      node5 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+      node4 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+      node3 [fontsize="14",width="0.35000000000000003",height="0.35000000000000003",penwidth="1.2249999999999999",shape="box",style="rounded",label="time_to_impact_reduction"];
+
+      node2 [fontsize="14",width="0.35000000000000003",height="0.35000000000000003",penwidth="1.2249999999999999",shape="box",style="rounded",label="selection"];
+
+   }
+
+   node7 [fontsize="14",width="0.35000000000000003",height="0.35000000000000003",penwidth="1.2249999999999999",shape="none",label="time_to_impact1\nSB(≥0)",fontcolor="darkgreen"];
+
+   node8 [fontsize="14",width="0.35000000000000003",height="0.35000000000000003",penwidth="1.2249999999999999",shape="none",label="time_to_impact2\nSB(≥0)",fontcolor="darkgreen"];
+
+   node9 [fontsize="14",width="0.35000000000000003",height="0.35000000000000003",penwidth="1.2249999999999999",shape="none",label="time_to_impact3\nSB(≥0)",fontcolor="darkgreen"];
+
+   node10 [fontsize="14",width="0.35000000000000003",height="0.35000000000000003",penwidth="1.2249999999999999",shape="none",label="fixed_cost\nSB([835000000,2505000000]::5000000) USD",fontcolor="#861109"];
+
+   node11 [fontsize="14",width="0.35000000000000003",height="0.35000000000000003",penwidth="1.2249999999999999",shape="none",label="recurring_cost\nSB([70000000,210000000]::1000000) USD",fontcolor="#861109"];
+
+   node6->node2 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="d3 : {0}",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node5->node2 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="d2 : SB({0, 0.5})",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node4->node2 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="d1 : SB({0, 0.5})",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node3->node4 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="d1 : SB(≥0)",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node3->node5 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="d2 : SB(≥0)",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node3->node6 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="d3 : SB(≥0)",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node2->node10 [fontsize="14",penwidth="1.75",arrowsize="0.525",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node2->node11 [fontsize="14",penwidth="1.75",arrowsize="0.525",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node7->node3 [fontsize="14",penwidth="1.75",arrowsize="0.525",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node8->node3 [fontsize="14",penwidth="1.75",arrowsize="0.525",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node9->node3 [fontsize="14",penwidth="1.75",arrowsize="0.525",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+}

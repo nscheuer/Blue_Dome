@@ -1,5 +1,0 @@
-interface {
-  requires cost [USD]
-  provides detection_cost [USD]
-  provides redirection_cost [USD]
-}

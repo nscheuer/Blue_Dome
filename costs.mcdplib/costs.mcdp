@@ -1,7 +1,0 @@
-mcdp {
-  requires cost [USD]
-  provides detection_cost [USD]
-  provides redirection_cost [USD]
-
-  required cost >= provided detection_cost + provided redirection_cost
-}
