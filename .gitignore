@@ -5,3 +5,7 @@ result-*
 
 # Ignore automatically generated direnv output
 .direnv
+
+# ---> MCDP
+# Ignore query cache
+out-query

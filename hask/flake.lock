@@ -351,11 +351,11 @@
     "hackage-for-stackage_2": {
       "flake": false,
       "locked": {
-        "lastModified": 1764203186,
-        "narHash": "sha256-1SBGn2VNS1HSWFF9X3LG0VdqNJp5wXpB6dT8fEIG6Bc=",
+        "lastModified": 1764549110,
+        "narHash": "sha256-oEMgZhIIdcpOuz14j4/v8YTR5Pn7CWLFgCc1SjGDsSM=",
         "owner": "input-output-hk",
         "repo": "hackage.nix",
-        "rev": "ba8969ca61a38e1738c4e35d402f7d43c491aaf0",
+        "rev": "f316727efc726fe9b569fe20f316a41ed10f3c66",
         "type": "github"
       },
       "original": {
@@ -400,11 +400,11 @@
     "hackage_2": {
       "flake": false,
       "locked": {
-        "lastModified": 1764203197,
-        "narHash": "sha256-F78Z41DIC8ThihxzipceyVOjE2xHCFXHK/e0lq40mFw=",
+        "lastModified": 1764549120,
+        "narHash": "sha256-FgH8uAbQQ0IL65Yc4JjoCsnD3iTo+wN2SHM7YNtmflk=",
         "owner": "input-output-hk",
         "repo": "hackage.nix",
-        "rev": "9587f62bb414245da9ff8771a6baa1923bf05ad5",
+        "rev": "c6a5e8052355b7598d40b3a96809a14c14c5818c",
         "type": "github"
       },
       "original": {
@@ -508,11 +508,11 @@
         "stackage": "stackage_2"
       },
       "locked": {
-        "lastModified": 1764204741,
-        "narHash": "sha256-EUTooiwyFrcH3w5rbAWKMZrUHDeblf4qnds1RQYFjjQ=",
+        "lastModified": 1764550406,
+        "narHash": "sha256-Zzixqxnv8Sp2Qp70cXe22voi6ycpCKmEY48xFsZPRuc=",
         "owner": "input-output-hk",
         "repo": "haskell.nix",
-        "rev": "e4e2b4d20b6ca833f4dcc268badf1538e903b7f1",
+        "rev": "c82d4d93b6be275c9a8943e17ec12ce8e3b90d74",
         "type": "github"
       },
       "original": {
@@ -1320,11 +1320,11 @@
     "stackage_2": {
       "flake": false,
       "locked": {
-        "lastModified": 1764202380,
-        "narHash": "sha256-nEi+fd6xfVvrOdye3cMGvA9vuBAtp/ZSYELm/TU41ao=",
+        "lastModified": 1764548162,
+        "narHash": "sha256-lKjSroXNO8g7ez++EpuDa1C1S6Ax7a4eYYzDINnLm9M=",
         "owner": "input-output-hk",
         "repo": "stackage.nix",
-        "rev": "373df81259feb7b322ddd7feab955911e5d7ea88",
+        "rev": "101ad1145596c97cbf99797f58987af8f507f41d",
         "type": "github"
       },
       "original": {

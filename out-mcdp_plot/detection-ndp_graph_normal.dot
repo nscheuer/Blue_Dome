@@ -1,0 +1,570 @@
+digraph G {
+
+                graph [fontname = "STIX Two Math"];
+                 node [fontname = "STIX Two Math"];
+                 edge [fontname = "STIX Two Math"];
+                rankdir=LR;    nodesep=0;    esep=0;
+   subgraph cluster1 {
+      fontsize="14";
+      width="0.35000000000000003";
+      height="0.35000000000000003";
+      penwidth="1.2249999999999999";
+      shape="box";
+      style="rounded";
+      label="selection";
+      node69 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+      node68 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+      node67 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+      node66 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+      node65 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+      node64 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+      node63 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+      node62 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+      node61 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+      node60 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+      subgraph cluster8 {
+         fontsize="14";
+         width="0.35000000000000003";
+         height="0.35000000000000003";
+         penwidth="1.2249999999999999";
+         shape="box";
+         style="rounded";
+         label="selection2_1";
+         node59 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+         node58 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+         node57 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+         node56 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+         node55 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+         node54 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+         node53 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+         node52 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+         node51 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+         node50 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+         subgraph cluster32 {
+            fontsize="14";
+            width="0.35000000000000003";
+            height="0.35000000000000003";
+            penwidth="1.2249999999999999";
+            shape="box";
+            style="rounded";
+            label="selection1_2";
+            node49 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+            node48 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+            node47 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+            node46 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+            node45 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+            node44 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+            node43 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+            node42 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+            node41 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+            node40 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+            node39 [fontsize="14",width="0.35000000000000003",height="0.35000000000000003",penwidth="1.2249999999999999",imagescale="true",shape="box",style="rounded",label=<<TABLE CELLBORDER='0' BORDER='0'><TR><TD>ztf</TD></TR><TR><TD fixedsize='true' width='105' height='84'><IMG SRC='/tmp/mcdp_tmp_dir-root/resized/150/b70ab9e5e96058a76ab1d14fd817ee9b.png'/></TD></TR></TABLE>>];
+
+            node38 [fontsize="14",width="0.35000000000000003",height="0.35000000000000003",penwidth="1.2249999999999999",shape="box",style="rounded",label="true"];
+
+            node37 [fontsize="14",width="0.35000000000000003",height="0.35000000000000003",penwidth="1.2249999999999999",imagescale="true",shape="box",style="rounded",label=<<TABLE CELLBORDER='0' BORDER='0'><TR><TD>p2</TD></TR><TR><TD fixedsize='true' width='105' height='84'><IMG SRC='/tmp/mcdp_tmp_dir-root/resized/150/b70ab9e5e96058a76ab1d14fd817ee9b.png'/></TD></TR></TABLE>>];
+
+            node36 [fontsize="14",width="0.35000000000000003",height="0.35000000000000003",penwidth="1.2249999999999999",imagescale="true",shape="box",style="rounded",label=<<TABLE CELLBORDER='0' BORDER='0'><TR><TD>p1</TD></TR><TR><TD fixedsize='true' width='105' height='84'><IMG SRC='/tmp/mcdp_tmp_dir-root/resized/150/b70ab9e5e96058a76ab1d14fd817ee9b.png'/></TD></TR></TABLE>>];
+
+            node35 [fontsize="14",width="0.35000000000000003",height="0.35000000000000003",penwidth="1.2249999999999999",imagescale="true",shape="box",style="rounded",label=<<TABLE CELLBORDER='0' BORDER='0'><TR><TD>atlas</TD></TR><TR><TD fixedsize='true' width='105' height='84'><IMG SRC='/tmp/mcdp_tmp_dir-root/resized/150/b70ab9e5e96058a76ab1d14fd817ee9b.png'/></TD></TR></TABLE>>];
+
+            node34 [fontsize="14",width="0.35000000000000003",height="0.7000000000000001",penwidth="1.2249999999999999",unused_="unused_",image="/tmp/mcdp_tmp_dir-root/resized/150/3b6792b6b27e3a2688248e15e5fbc178.png",imagescale="true",fixedsize="true",shape="none",label=""];
+
+            node33 [fontsize="14",width="0.35000000000000003",height="0.7000000000000001",penwidth="1.2249999999999999",unused_="unused_",image="/tmp/mcdp_tmp_dir-root/resized/150/3b6792b6b27e3a2688248e15e5fbc178.png",imagescale="true",fixedsize="true",shape="none",label=""];
+
+         }
+
+         subgraph cluster14 {
+            fontsize="14";
+            width="0.35000000000000003";
+            height="0.35000000000000003";
+            penwidth="1.2249999999999999";
+            shape="box";
+            style="rounded";
+            label="selection1_1";
+            node31 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+            node30 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+            node29 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+            node28 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+            node27 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+            node26 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+            node25 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+            node24 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+            node23 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+            node22 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+            node21 [fontsize="14",width="0.35000000000000003",height="0.35000000000000003",penwidth="1.2249999999999999",imagescale="true",shape="box",style="rounded",label=<<TABLE CELLBORDER='0' BORDER='0'><TR><TD>starrs</TD></TR><TR><TD fixedsize='true' width='105' height='84'><IMG SRC='/tmp/mcdp_tmp_dir-root/resized/150/b70ab9e5e96058a76ab1d14fd817ee9b.png'/></TD></TR></TABLE>>];
+
+            node20 [fontsize="14",width="0.35000000000000003",height="0.35000000000000003",penwidth="1.2249999999999999",shape="box",style="rounded",label="true"];
+
+            node19 [fontsize="14",width="0.35000000000000003",height="0.35000000000000003",penwidth="1.2249999999999999",shape="box",style="rounded",label="true"];
+
+            node18 [fontsize="14",width="0.35000000000000003",height="0.35000000000000003",penwidth="1.2249999999999999",shape="box",style="rounded",label="true"];
+
+            node17 [fontsize="14",width="0.35000000000000003",height="0.35000000000000003",penwidth="1.2249999999999999",imagescale="true",shape="box",style="rounded",label=<<TABLE CELLBORDER='0' BORDER='0'><TR><TD>catalina</TD></TR><TR><TD fixedsize='true' width='105' height='84'><IMG SRC='/tmp/mcdp_tmp_dir-root/resized/150/b70ab9e5e96058a76ab1d14fd817ee9b.png'/></TD></TR></TABLE>>];
+
+            node16 [fontsize="14",width="0.35000000000000003",height="0.7000000000000001",penwidth="1.2249999999999999",unused_="unused_",image="/tmp/mcdp_tmp_dir-root/resized/150/3b6792b6b27e3a2688248e15e5fbc178.png",imagescale="true",fixedsize="true",shape="none",label=""];
+
+            node15 [fontsize="14",width="0.35000000000000003",height="0.7000000000000001",penwidth="1.2249999999999999",unused_="unused_",image="/tmp/mcdp_tmp_dir-root/resized/150/3b6792b6b27e3a2688248e15e5fbc178.png",imagescale="true",fixedsize="true",shape="none",label=""];
+
+         }
+
+         node13 [fontsize="14",width="0.35000000000000003",height="0.35000000000000003",penwidth="1.2249999999999999",shape="box",style="rounded",label="true"];
+
+         node12 [fontsize="14",width="0.35000000000000003",height="0.35000000000000003",penwidth="1.2249999999999999",imagescale="true",shape="box",style="rounded",label=<<TABLE CELLBORDER='0' BORDER='0'><TR><TD>p2</TD></TR><TR><TD fixedsize='true' width='105' height='84'><IMG SRC='/tmp/mcdp_tmp_dir-root/resized/150/b70ab9e5e96058a76ab1d14fd817ee9b.png'/></TD></TR></TABLE>>];
+
+         node11 [fontsize="14",width="0.35000000000000003",height="0.35000000000000003",penwidth="1.2249999999999999",imagescale="true",shape="box",style="rounded",label=<<TABLE CELLBORDER='0' BORDER='0'><TR><TD>p1</TD></TR><TR><TD fixedsize='true' width='105' height='84'><IMG SRC='/tmp/mcdp_tmp_dir-root/resized/150/b70ab9e5e96058a76ab1d14fd817ee9b.png'/></TD></TR></TABLE>>];
+
+         node10 [fontsize="14",width="0.35000000000000003",height="0.7000000000000001",penwidth="1.2249999999999999",unused_="unused_",image="/tmp/mcdp_tmp_dir-root/resized/150/3b6792b6b27e3a2688248e15e5fbc178.png",imagescale="true",fixedsize="true",shape="none",label=""];
+
+         node9 [fontsize="14",width="0.35000000000000003",height="0.7000000000000001",penwidth="1.2249999999999999",unused_="unused_",image="/tmp/mcdp_tmp_dir-root/resized/150/3b6792b6b27e3a2688248e15e5fbc178.png",imagescale="true",fixedsize="true",shape="none",label=""];
+
+      }
+
+      node7 [fontsize="14",width="0.35000000000000003",height="0.35000000000000003",penwidth="1.2249999999999999",imagescale="true",shape="box",style="rounded",label=<<TABLE CELLBORDER='0' BORDER='0'><TR><TD>rubin</TD></TR><TR><TD fixedsize='true' width='105' height='84'><IMG SRC='/tmp/mcdp_tmp_dir-root/resized/150/b70ab9e5e96058a76ab1d14fd817ee9b.png'/></TD></TR></TABLE>>];
+
+      node6 [fontsize="14",width="0.35000000000000003",height="0.35000000000000003",penwidth="1.2249999999999999",shape="box",style="rounded",label="true"];
+
+      node5 [fontsize="14",width="0.35000000000000003",height="0.35000000000000003",penwidth="1.2249999999999999",imagescale="true",shape="box",style="rounded",label=<<TABLE CELLBORDER='0' BORDER='0'><TR><TD>p2</TD></TR><TR><TD fixedsize='true' width='105' height='84'><IMG SRC='/tmp/mcdp_tmp_dir-root/resized/150/b70ab9e5e96058a76ab1d14fd817ee9b.png'/></TD></TR></TABLE>>];
+
+      node4 [fontsize="14",width="0.35000000000000003",height="0.35000000000000003",penwidth="1.2249999999999999",imagescale="true",shape="box",style="rounded",label=<<TABLE CELLBORDER='0' BORDER='0'><TR><TD>p1</TD></TR><TR><TD fixedsize='true' width='105' height='84'><IMG SRC='/tmp/mcdp_tmp_dir-root/resized/150/b70ab9e5e96058a76ab1d14fd817ee9b.png'/></TD></TR></TABLE>>];
+
+      node3 [fontsize="14",width="0.35000000000000003",height="0.7000000000000001",penwidth="1.2249999999999999",unused_="unused_",image="/tmp/mcdp_tmp_dir-root/resized/150/3b6792b6b27e3a2688248e15e5fbc178.png",imagescale="true",fixedsize="true",shape="none",label=""];
+
+      node2 [fontsize="14",width="0.35000000000000003",height="0.7000000000000001",penwidth="1.2249999999999999",unused_="unused_",image="/tmp/mcdp_tmp_dir-root/resized/150/3b6792b6b27e3a2688248e15e5fbc178.png",imagescale="true",fixedsize="true",shape="none",label=""];
+
+   }
+
+   subgraph cluster70 {
+      fontsize="14";
+      width="0.35000000000000003";
+      height="0.35000000000000003";
+      penwidth="1.2249999999999999";
+      shape="box";
+      style="rounded";
+      label="time_to_impact_reduction";
+      node155 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+      node154 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+      node153 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+      node152 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+      node151 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+      node150 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+      node149 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+      node148 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+      node147 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+      node146 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+      node145 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+      node144 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+      node143 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+      node142 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+      node141 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+      node140 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+      node139 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+      node138 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+      node137 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+      node136 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+      node135 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+      node134 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+      node133 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+      node132 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+      node131 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+      node130 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+      node129 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+      node128 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+      node127 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+      node126 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+      node125 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+      node124 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+      node123 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+      node122 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+      node121 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+      node120 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+      node119 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+      node118 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+      node117 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+      node116 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+      node115 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+      node114 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+      node113 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+      node112 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+      node111 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+      node110 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+      node109 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+      node108 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+      node107 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+      node106 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+      node105 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+      node104 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+      node103 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+      node102 [fontsize="14",width="0.35000000000000003",height="0.35000000000000003",penwidth="1.2249999999999999",shape="box",style="rounded",label=<<FONT COLOR='darkgreen'>f</FONT> ≤ <FONT COLOR='#861109'>r</FONT>>];
+
+      node101 [fontsize="14",width="0.35000000000000003",height="0.35000000000000003",penwidth="1.2249999999999999",shape="box",style="rounded",label=<<FONT COLOR='darkgreen'>f</FONT> ≤ <FONT COLOR='#861109'>r</FONT>>];
+
+      node100 [fontsize="14",width="0.35000000000000003",height="0.7000000000000001",penwidth="1.2249999999999999",unused_="unused_",image="/tmp/mcdp_tmp_dir-root/resized/150/e20f0c213a103aa3da7410e137aaffc7.png",imagescale="true",fixedsize="true",shape="none",label=""];
+
+      node99 [fontsize="14",width="0.35000000000000003",height="0.7000000000000001",penwidth="1.2249999999999999",unused_="unused_",image="/tmp/mcdp_tmp_dir-root/resized/150/aee32ac6532341053abc11f32d701b3c.png",imagescale="true",fixedsize="true",shape="none",label=""];
+
+      node98 [fontsize="14",width="0.35000000000000003",height="0.7000000000000001",penwidth="1.2249999999999999",unused_="unused_",image="/tmp/mcdp_tmp_dir-root/resized/150/aee32ac6532341053abc11f32d701b3c.png",imagescale="true",fixedsize="true",shape="none",label=""];
+
+      node97 [fontsize="14",width="0.35000000000000003",height="0.35000000000000003",penwidth="1.2249999999999999",shape="box",style="rounded",label=<<FONT COLOR='darkgreen'>f</FONT> ≤ <FONT COLOR='#861109'>r</FONT> ⋅ 0>];
+
+      node96 [fontsize="14",width="0.35000000000000003",height="0.35000000000000003",penwidth="1.2249999999999999",shape="box",style="rounded",label=<<FONT COLOR='darkgreen'>f</FONT> ≤ <FONT COLOR='#861109'>r</FONT> ⋅ 0>];
+
+      node95 [fontsize="14",width="0.35000000000000003",height="0.35000000000000003",penwidth="1.2249999999999999",shape="box",style="rounded",label=<<FONT COLOR='darkgreen'>f</FONT> ≤ <FONT COLOR='#861109'>r</FONT> ⋅ 0.032432432>];
+
+      node94 [fontsize="14",width="0.35000000000000003",height="0.35000000000000003",penwidth="1.2249999999999999",shape="box",style="rounded",label=<<FONT COLOR='darkgreen'>f</FONT> ≤ <FONT COLOR='#861109'>r</FONT> ⋅ 0>];
+
+      node93 [fontsize="14",width="0.35000000000000003",height="0.35000000000000003",penwidth="1.2249999999999999",shape="box",style="rounded",label=<<FONT COLOR='darkgreen'>f</FONT> ≤ <FONT COLOR='#861109'>r</FONT> ⋅ 0>];
+
+      node92 [fontsize="14",width="0.35000000000000003",height="0.35000000000000003",penwidth="1.2249999999999999",shape="box",style="rounded",label=<<FONT COLOR='darkgreen'>f</FONT> ≤ <FONT COLOR='#861109'>r</FONT> ⋅ 2.3E-8>];
+
+      node91 [fontsize="14",width="0.35000000000000003",height="0.35000000000000003",penwidth="1.2249999999999999",shape="box",style="rounded",label=<<FONT COLOR='darkgreen'>f</FONT> ≤ <FONT COLOR='#861109'>r</FONT> ⋅ 0>];
+
+      node90 [fontsize="14",width="0.35000000000000003",height="0.35000000000000003",penwidth="1.2249999999999999",shape="box",style="rounded",label=<<FONT COLOR='darkgreen'>f</FONT> ≤ <FONT COLOR='#861109'>r</FONT> ⋅ 0>];
+
+      node89 [fontsize="14",width="0.35000000000000003",height="0.35000000000000003",penwidth="1.2249999999999999",shape="box",style="rounded",label=<<FONT COLOR='darkgreen'>f</FONT> ≤ <FONT COLOR='#861109'>r</FONT> ⋅ 0.032432432>];
+
+      node88 [fontsize="14",width="0.35000000000000003",height="0.35000000000000003",penwidth="1.2249999999999999",shape="box",style="rounded",label=<<FONT COLOR='darkgreen'>f</FONT> ≤ <FONT COLOR='#861109'>r</FONT> ⋅ 0>];
+
+      node87 [fontsize="14",width="0.35000000000000003",height="0.35000000000000003",penwidth="1.2249999999999999",shape="box",style="rounded",label=<<FONT COLOR='darkgreen'>f</FONT> ≤ <FONT COLOR='#861109'>r</FONT> ⋅ 0>];
+
+      node86 [fontsize="14",width="0.35000000000000003",height="0.35000000000000003",penwidth="1.2249999999999999",shape="box",style="rounded",label=<<FONT COLOR='darkgreen'>f</FONT> ≤ <FONT COLOR='#861109'>r</FONT> ⋅ 2.3E-8>];
+
+      node85 [fontsize="14",width="0.35000000000000003",height="0.35000000000000003",penwidth="1.2249999999999999",shape="box",style="rounded",label=<<FONT COLOR='darkgreen'>f</FONT> ≤ <FONT COLOR='#861109'>r</FONT> ⋅ 0>];
+
+      node84 [fontsize="14",width="0.35000000000000003",height="0.35000000000000003",penwidth="1.2249999999999999",shape="box",style="rounded",label=<<FONT COLOR='darkgreen'>f</FONT> ≤ <FONT COLOR='#861109'>r</FONT> ⋅ 0>];
+
+      node83 [fontsize="14",width="0.35000000000000003",height="0.35000000000000003",penwidth="1.2249999999999999",shape="box",style="rounded",label=<<FONT COLOR='darkgreen'>f</FONT> ≤ <FONT COLOR='#861109'>r</FONT> ⋅ 0>];
+
+      node82 [fontsize="14",width="0.35000000000000003",height="0.35000000000000003",penwidth="1.2249999999999999",shape="box",style="rounded",label=<<FONT COLOR='darkgreen'>f</FONT> ≤ <FONT COLOR='#861109'>r</FONT> ⋅ 0>];
+
+      node81 [fontsize="14",width="0.35000000000000003",height="0.35000000000000003",penwidth="1.2249999999999999",shape="box",style="rounded",label=<<FONT COLOR='darkgreen'>f</FONT> ≤ <FONT COLOR='#861109'>r</FONT> ⋅ 0>];
+
+      node80 [fontsize="14",width="0.35000000000000003",height="0.35000000000000003",penwidth="1.2249999999999999",shape="box",style="rounded",label=<<FONT COLOR='darkgreen'>f</FONT> ≤ <FONT COLOR='#861109'>r</FONT> ⋅ 0>];
+
+      node79 [fontsize="14",width="0.35000000000000003",height="0.35000000000000003",penwidth="1.2249999999999999",shape="box",style="rounded",label=<<FONT COLOR='darkgreen'>f</FONT> ≤ <FONT COLOR='#861109'>r</FONT> ⋅ 0.032432432>];
+
+      node78 [fontsize="14",width="0.35000000000000003",height="0.35000000000000003",penwidth="1.2249999999999999",shape="box",style="rounded",label=<<FONT COLOR='darkgreen'>f</FONT> ≤ <FONT COLOR='#861109'>r</FONT> ⋅ 0>];
+
+      node77 [fontsize="14",width="0.35000000000000003",height="0.35000000000000003",penwidth="1.2249999999999999",shape="box",style="rounded",label=<<FONT COLOR='darkgreen'>f</FONT> ≤ <FONT COLOR='#861109'>r</FONT> ⋅ 0>];
+
+      node76 [fontsize="14",width="0.35000000000000003",height="0.35000000000000003",penwidth="1.2249999999999999",shape="box",style="rounded",label=<<FONT COLOR='darkgreen'>f</FONT> ≤ <FONT COLOR='#861109'>r</FONT> ⋅ 2.3E-8>];
+
+      node75 [fontsize="14",width="0.35000000000000003",height="0.35000000000000003",penwidth="1.2249999999999999",shape="box",style="rounded",label=<<FONT COLOR='darkgreen'>f</FONT> ≤ <FONT COLOR='#861109'>r</FONT> ⋅ 0>];
+
+      node74 [fontsize="14",width="0.35000000000000003",height="0.35000000000000003",penwidth="1.2249999999999999",shape="box",style="rounded",label=<<FONT COLOR='darkgreen'>f</FONT> ≤ <FONT COLOR='#861109'>r</FONT> ⋅ 0>];
+
+      node73 [fontsize="14",width="0.35000000000000003",height="0.35000000000000003",penwidth="1.2249999999999999",shape="box",style="rounded",label=<<FONT COLOR='darkgreen'>f</FONT> ≤ <FONT COLOR='#861109'>r</FONT> ⋅ 0>];
+
+      node72 [fontsize="14",width="0.35000000000000003",height="0.35000000000000003",penwidth="1.2249999999999999",shape="box",style="rounded",label=<<FONT COLOR='darkgreen'>f</FONT> ≤ <FONT COLOR='#861109'>r</FONT> ⋅ 0>];
+
+      node71 [fontsize="14",width="0.35000000000000003",height="0.35000000000000003",penwidth="1.2249999999999999",shape="box",style="rounded",label=<<FONT COLOR='darkgreen'>f</FONT> ≤ <FONT COLOR='#861109'>r</FONT> ⋅ 0>];
+
+   }
+
+   node156 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+   node157 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+   node158 [fontsize="14",width="0.35000000000000003",height="0.525",penwidth="1.2249999999999999",shape="plaintext",image="/tmp/mcdp_tmp_dir-root/resized/150/1adf73162431f7111c2e393564893cbc.png",imagescale="true",fixedsize="true",label=""];
+
+   node159 [fontsize="14",width="0.35000000000000003",height="0.35000000000000003",penwidth="1.2249999999999999",shape="none",label="time_to_impact1\nSB(≥0)",fontcolor="darkgreen"];
+
+   node160 [fontsize="14",width="0.35000000000000003",height="0.35000000000000003",penwidth="1.2249999999999999",shape="none",label="time_to_impact2\nSB(≥0)",fontcolor="darkgreen"];
+
+   node161 [fontsize="14",width="0.35000000000000003",height="0.35000000000000003",penwidth="1.2249999999999999",shape="none",label="time_to_impact3\nSB(≥0)",fontcolor="darkgreen"];
+
+   node162 [fontsize="14",width="0.35000000000000003",height="0.35000000000000003",penwidth="1.2249999999999999",shape="none",label="fixed_cost\nSB([835000000,2505000000]::5000000) USD",fontcolor="#861109"];
+
+   node163 [fontsize="14",width="0.35000000000000003",height="0.35000000000000003",penwidth="1.2249999999999999",shape="none",label="recurring_cost\nSB([70000000,210000000]::1000000) USD",fontcolor="#861109"];
+
+   node155->node90 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="SB(≥0)",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node154->node89 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="SB(≥0)",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node153->node88 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="SB(≥0)",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node152->node87 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="SB(≥0)",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node151->node86 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="SB(≥0)",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node150->node85 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="SB(≥0)",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node149->node84 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="SB(≥0)",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node148->node82 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="SB(≥0)",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node147->node81 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="SB(≥0)",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node146->node97 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="SB(≥0)",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node145->node80 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="SB(≥0)",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node144->node79 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="SB(≥0)",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node143->node78 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="SB(≥0)",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node142->node77 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="SB(≥0)",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node141->node76 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="SB(≥0)",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node140->node75 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="SB(≥0)",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node139->node74 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="SB(≥0)",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node138->node73 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="SB(≥0)",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node137->node71 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="SB(≥0)",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node136->node96 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="SB(≥0)",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node135->node95 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="SB(≥0)",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node134->node94 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="SB(≥0)",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node133->node93 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="SB(≥0)",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node132->node92 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="SB(≥0)",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node131->node91 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="SB(≥0)",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node130->node83 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="SB(≥0)",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node129->node72 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="SB(≥0)",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node128->node101 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="required d1",weight="0.5",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node127->node101 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="required d1",weight="0.5",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node126->node101 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="required d1",weight="0.5",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node125->node101 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="required d1",weight="0.5",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node124->node101 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="required d1",weight="0.5",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node123->node101 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="required d1",weight="0.5",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node122->node101 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="required d1",weight="0.5",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node121->node102 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="required d2",weight="0.5",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node120->node101 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="required d1",weight="0.5",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node119->node101 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="required d1",weight="0.5",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node118->node102 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="required d2",weight="0.5",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node117->node102 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="required d2",weight="0.5",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node116->node101 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="required d1",weight="0.5",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node115->node102 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="required d2",weight="0.5",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node114->node102 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="required d2",weight="0.5",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node113->node101 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="required d1",weight="0.5",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node112->node101 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="required d1",weight="0.5",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node111->node101 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="required d1",weight="0.5",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node110->node101 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="required d1",weight="0.5",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node109->node101 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="required d1",weight="0.5",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node108->node101 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="required d1",weight="0.5",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node107->node101 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="required d1",weight="0.5",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node106->node102 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="required d2",weight="0.5",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node105->node102 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="required d2",weight="0.5",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node104->node102 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="required d2",weight="0.5",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node103->node101 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="required d1",weight="0.5",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node102->node157 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="d2 : SB(≥0)",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node101->node156 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="d1 : SB(≥0)",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node100->node147 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="SB(≥0)",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node100->node148 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="SB(≥0)",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node100->node149 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="SB(≥0)",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node100->node150 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="SB(≥0)",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node100->node151 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="SB(≥0)",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node100->node152 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="SB(≥0)",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node100->node153 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="SB(≥0)",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node100->node154 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="SB(≥0)",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node100->node155 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="SB(≥0)",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node99->node138 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="SB(≥0)",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node99->node139 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="SB(≥0)",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node99->node140 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="SB(≥0)",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node99->node141 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="SB(≥0)",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node99->node142 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="SB(≥0)",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node99->node143 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="SB(≥0)",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node99->node144 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="SB(≥0)",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node99->node145 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="SB(≥0)",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node99->node146 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="SB(≥0)",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node98->node129 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="SB(≥0)",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node98->node130 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="SB(≥0)",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node98->node131 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="SB(≥0)",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node98->node132 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="SB(≥0)",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node98->node133 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="SB(≥0)",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node98->node134 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="SB(≥0)",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node98->node135 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="SB(≥0)",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node98->node136 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="SB(≥0)",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node98->node137 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="SB(≥0)",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node97->node128 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="SB(≥0)",weight="0.5",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node96->node127 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="SB(≥0)",weight="0.5",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node95->node126 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="SB(≥0)",weight="0.5",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node94->node125 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="SB(≥0)",weight="0.5",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node93->node124 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="SB(≥0)",weight="0.5",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node92->node123 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="SB(≥0)",weight="0.5",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node91->node122 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="SB(≥0)",weight="0.5",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node90->node121 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="SB(≥0)",weight="0.5",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node89->node120 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="SB(≥0)",weight="0.5",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node88->node119 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="SB(≥0)",weight="0.5",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node87->node118 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="SB(≥0)",weight="0.5",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node86->node117 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="SB(≥0)",weight="0.5",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node85->node116 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="SB(≥0)",weight="0.5",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node84->node158 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="d3 : SB(≥0)",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node83->node115 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="SB(≥0)",weight="0.5",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node82->node114 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="SB(≥0)",weight="0.5",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node81->node113 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="SB(≥0)",weight="0.5",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node80->node112 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="SB(≥0)",weight="0.5",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node79->node111 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="SB(≥0)",weight="0.5",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node78->node110 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="SB(≥0)",weight="0.5",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node77->node109 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="SB(≥0)",weight="0.5",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node76->node108 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="SB(≥0)",weight="0.5",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node75->node107 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="SB(≥0)",weight="0.5",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node74->node106 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="SB(≥0)",weight="0.5",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node73->node105 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="SB(≥0)",weight="0.5",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node72->node104 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="SB(≥0)",weight="0.5",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node71->node103 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="SB(≥0)",weight="0.5",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node69->node3 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="selection2_1_recurring_cost\n{20000000,30000000,22000000,32000000,24000000,34000000,36000000,38000000,28000000,46000000,50000000,47000000,58000000,44000000,55000000,52000000,49000000,60000000,25000000,27000000,29000000,23000000,41000000,43000000,33000000,35000000,37000000,45000000,57000000,54000000,40000000,26000000,51000000,48000000,31000000,56000000,42000000,53000000,39000000} USD",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node68->node2 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="selection2_1_fixed_cost\n{140000000,160000000,180000000,150000000,240000000,200000000,170000000,190000000,260000000,280000000,345000000,370000000,395000000,250000000,275000000,300000000,350000000,375000000,400000000,305000000,355000000,380000000,405000000,135000000,175000000,155000000,145000000,165000000,185000000,235000000,205000000,255000000,195000000,285000000,335000000,360000000,385000000,265000000,290000000,340000000,365000000,390000000,245000000,270000000,295000000} USD",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node67->node3 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="rubin_recurring_cost\nSB({100000000, 150000000, 50000000}) USD",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node66->node2 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="rubin_fixed_cost\nSB({1400000000, 2100000000, 700000000}) USD",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node65->node7 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="d3 : {0.000081321}",weight="0.5",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node64->node13 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="d3 : {0}",weight="0.5",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node63->node7 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="d2 : {0.145444103}",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node62->node12 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="d2 : SB({0, 0.5})",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node61->node7 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="d1 : {0.145444104}",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node60->node11 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="d1 : SB({0, 0.5})",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node59->node10 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="selection1_2_recurring_cost\n{7000000,12000000,17000000,9000000,14000000,19000000,11000000,16000000,21000000} USD",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node58->node9 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="selection1_2_fixed_cost\n{25000000,45000000,65000000,30000000,50000000,70000000,35000000,55000000,75000000} USD",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node57->node10 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="selection1_1_recurring_cost\n{13000000,16000000,29000000,23000000,19000000,26000000,33000000,39000000,36000000} USD",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node56->node9 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="selection1_1_fixed_cost\n{110000000,120000000,130000000,210000000,220000000,230000000,310000000,320000000,330000000} USD",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node55->node38 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="d3 : {0}",weight="0.5",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node54->node20 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="d3 : {0}",weight="0.5",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node53->node37 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="d2 : SB({0, 0.5})",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node52->node19 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="d2 : {0}",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node51->node36 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="d1 : SB({0, 0.5})",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node50->node18 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="d1 : {0}",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node49->node34 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="ztf_recurring_cost\nSB({10000000, 15000000, 5000000}) USD",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node48->node33 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="ztf_fixed_cost\nSB({20000000, 40000000, 60000000}) USD",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node47->node39 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="d3 : {0.000001419,4.73E-7,9.46E-7}",weight="0.5",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node46->node35 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="d3 : {3.4E-8}",weight="0.5",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node45->node39 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="d2 : {0.39504894,0.529477535,0.222214001}",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node44->node35 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="d2 : {0.157562008}",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node43->node39 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="d1 : {0.52947817,0.222214351,0.395049484}",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node42->node35 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="d1 : {0.157564446}",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node41->node34 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="atlas_recurring_cost\nSB({2000000, 4000000, 6000000}) USD",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node40->node33 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="atlas_fixed_cost\nSB({10000000, 15000000, 5000000}) USD",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node39->node48 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="fixed_cost\nSB({20000000, 40000000, 60000000}) USD",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node39->node49 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="recurring_cost\nSB({10000000, 15000000, 5000000}) USD",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node38->node46 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="x : {0}",weight="0.5",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node38->node47 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="y : {0}",weight="0.5",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node37->node44 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="x : {0}",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node37->node45 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="y : SB({0, 0.5})",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node36->node42 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="x : {0}",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node36->node43 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="y : SB({0, 0.5})",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node35->node40 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="fixed_cost\nSB({10000000, 15000000, 5000000}) USD",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node35->node41 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="recurring_cost\nSB({2000000, 4000000, 6000000}) USD",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node34->node59 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="recurring_cost\n{7000000,12000000,17000000,9000000,14000000,19000000,11000000,16000000,21000000} USD",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node33->node58 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="fixed_cost\n{25000000,45000000,65000000,30000000,50000000,70000000,35000000,55000000,75000000} USD",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node31->node16 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="starrs_recurring_cost\nSB({10000000, 20000000, 30000000}) USD",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node30->node15 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="starrs_fixed_cost\nSB({100000000, 200000000, 300000000}) USD",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node29->node17 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="d3 : {1.1E-8}",weight="0.5",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node28->node21 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="d3 : {3.81E-7}",weight="0.5",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node27->node17 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="d2 : {0.0242405}",weight="0.5",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node26->node21 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="d2 : {0.024240679}",weight="0.5",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node25->node17 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="d1 : {0.024240684}",weight="0.5",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node24->node21 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="d1 : {0.024240684}",weight="0.5",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node23->node16 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="catalina_recurring_cost\nSB({3000000, 6000000, 9000000}) USD",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node22->node15 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="catalina_fixed_cost\nSB({10000000, 20000000, 30000000}) USD",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node21->node30 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="fixed_cost\nSB({100000000, 200000000, 300000000}) USD",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node21->node31 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="recurring_cost\nSB({10000000, 20000000, 30000000}) USD",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node20->node28 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="x : {0}",weight="0.5",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node20->node29 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="y : {0}",weight="0.5",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node19->node26 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="x : {0}",weight="0.5",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node19->node27 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="y : {0}",weight="0.5",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node18->node24 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="x : {0}",weight="0.5",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node18->node25 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="y : {0}",weight="0.5",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node17->node22 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="fixed_cost\nSB({10000000, 20000000, 30000000}) USD",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node17->node23 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="recurring_cost\nSB({3000000, 6000000, 9000000}) USD",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node16->node57 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="recurring_cost\n{13000000,16000000,29000000,23000000,19000000,26000000,33000000,39000000,36000000} USD",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node15->node56 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="fixed_cost\n{110000000,120000000,130000000,210000000,220000000,230000000,310000000,320000000,330000000} USD",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node13->node54 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="x : {0}",weight="0.5",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node13->node55 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="y : {0}",weight="0.5",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node12->node52 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="x : {0}",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node12->node53 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="y : SB({0, 0.5})",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node11->node50 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="x : {0}",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node11->node51 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="y : SB({0, 0.5})",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node10->node69 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="recurring_cost\n{20000000,30000000,22000000,32000000,24000000,34000000,36000000,38000000,28000000,46000000,50000000,47000000,58000000,44000000,55000000,52000000,49000000,60000000,25000000,27000000,29000000,23000000,41000000,43000000,33000000,35000000,37000000,45000000,57000000,54000000,40000000,26000000,51000000,48000000,31000000,56000000,42000000,53000000,39000000} USD",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node9->node68 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="fixed_cost\n{140000000,160000000,180000000,150000000,240000000,200000000,170000000,190000000,260000000,280000000,345000000,370000000,395000000,250000000,275000000,300000000,350000000,375000000,400000000,305000000,355000000,380000000,405000000,135000000,175000000,155000000,145000000,165000000,185000000,235000000,205000000,255000000,195000000,285000000,335000000,360000000,385000000,265000000,290000000,340000000,365000000,390000000,245000000,270000000,295000000} USD",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node7->node66 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="fixed_cost\nSB({1400000000, 2100000000, 700000000}) USD",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node7->node67 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="recurring_cost\nSB({100000000, 150000000, 50000000}) USD",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node6->node64 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="x : {0}",weight="0.5",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node6->node65 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="y : {0}",weight="0.5",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node5->node62 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="x : SB({0, 0.5})",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node5->node63 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="y : {0}",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node4->node60 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="x : SB({0, 0.5})",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node4->node61 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="y : {0}",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node3->node163 [fontsize="14",penwidth="1.75",arrowsize="0.525",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node2->node162 [fontsize="14",penwidth="1.75",arrowsize="0.525",fontcolor="#861109",color="#861109",arrowtail="dot",arrowhead="none",dir="both",style="dashed"];
+   node156->node4 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="d1 : SB({0, 0.5})",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node157->node5 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="d2 : SB({0, 0.5})",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node158->node6 [fontsize="14",penwidth="1.75",arrowsize="0.525",label="d3 : {0}",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node159->node98 [fontsize="14",penwidth="1.75",arrowsize="0.525",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node160->node99 [fontsize="14",penwidth="1.75",arrowsize="0.525",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+   node161->node100 [fontsize="14",penwidth="1.75",arrowsize="0.525",color="darkgreen",fontcolor="darkgreen",arrowhead="box",arrowtail="none",dir="both"];
+}

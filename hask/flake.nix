@@ -62,7 +62,6 @@
               nil.enable = true;
               nixfmt-rfc-style.enable = true;
               statix.enable = true;
-              ripsecrets.enable = true;
               typos.enable = true;
               vale.enable = false;
               typstyle.enable = true;
