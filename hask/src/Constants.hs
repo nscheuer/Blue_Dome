@@ -6,22 +6,22 @@ import Types
 
 -- discretization settings
 rangeSamples :: Int
-rangeSamples = 10
+rangeSamples = 3
 
 sizeSamples :: Int
-sizeSamples = 10
+sizeSamples = 3
 
 velocitySamples :: Int
-velocitySamples = 10
+velocitySamples = 3
 
 ratioSamples :: Int
 ratioSamples = 3
 
 probabilitySamples :: Int
-probabilitySamples = 10
+probabilitySamples = 3
 
 costOptions :: Int
-costOptions = 10
+costOptions = 3
 
 representativeTimes :: [Time]
 representativeTimes = [Day 1, Day 10, Day 100]

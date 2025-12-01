@@ -5,6 +5,7 @@ import Types
 
 import Data.Foldable (minimumBy)
 import Data.Text as T (intercalate, replace)
+import Text.Printf (printf)
 
 -- unit conversion
 squareDegrees :: SolidAngle -> Double
@@ -151,6 +152,12 @@ hydrate :: Text -> Text -> Text -> Text
 hydrate old = replace (delim <> old <> delim)
 
 -- serialize
+showDecString :: Double -> String
+showDecString = printf "%.9f"
+
+showDec :: Double -> Text
+showDec x = toText $ showDecString x
+
 stringLines :: [Text] -> Text
 stringLines = T.intercalate newline
 
