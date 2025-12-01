@@ -18,7 +18,7 @@ ratioSamples :: Int
 ratioSamples = 3
 
 probabilitySamples :: Int
-probabilitySamples = 3
+probabilitySamples = 30
 
 costOptions :: Int
 costOptions = 3

@@ -368,4 +368,4 @@ main = do
 -- selectedSensorHeatmaps :: [Heatmap]
 -- selectedSensorHeatmaps = [sensorHeatmap ztf, sensorHeatmap rubin, combineSensors ztf rubin]
 
--- main = mapM_ plot selectedSensorHeatmaps
+-- main = mapM_ plot sensorHeatmaps

@@ -5,11 +5,11 @@ query:
   query_type: FixResMaxFun
   min_f:
     time_to_impact1: '0.01'
-    time_to_impact2: '0.01'
-    time_to_impact3: '0.01'
+    time_to_impact2: '0'
+    time_to_impact3: '0'
   max_r:
-    fixed_cost: '5000000000 USD'
-    recurring_cost: '500000000 USD'
+    fixed_cost: '2500000000 USD'
+    recurring_cost: '250000000 USD'
   optimize_for:
     - time_to_impact1
     - time_to_impact2

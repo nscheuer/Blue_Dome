@@ -1,6 +1,0 @@
-optimistic:
-  maximals: frozenset({(Decimal('0.016216227'), Decimal('0.016216227'), Decimal('0.016216227'))})
-  pretty: ↓{⟨0.016216227,0.016216227,0.016216227⟩}
-pessimistic:
-  maximals: frozenset({(Decimal('0.016216227'), Decimal('0.016216227'), Decimal('0.016216227'))})
-  pretty: ↓{⟨0.016216227,0.016216227,0.016216227⟩}
