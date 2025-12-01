@@ -61,13 +61,14 @@ def main():
     This function holds the logic that should ONLY run in the main process.
     """
     mcdp = MCDP_Parallel(
-        ground_sensors=[RUBIN, ZTF, PANSTARRS], 
-        space_sensors=[NEO_SURVEYOR, NEOCAM, NEOMIR, GAIA], 
-        ground_max_counts=[3, 3, 3], 
-        space_max_counts=[2, 2, 2, 2], 
+        ground_sensors=[PANSTARRS, ATLAS, ZTF, RUBIN], 
+        space_sensors=[NEOCAM, NEOMIR],
+        ground_max_counts=[3, 3, 3, 3], 
+        space_max_counts=[2, 2],
         size_dist=Size_Distribution, 
         vel_dist=Velocity_Distribution, 
-        pv_dist=Albedo_Distribution
+        pv_dist=Albedo_Distribution,
+        target=0.01
     )
     
     # Run the simulation
