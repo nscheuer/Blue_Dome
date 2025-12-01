@@ -1,0 +1,16 @@
+title: time_to_impact_three
+description: Query for three time to impact detection probabilities
+model: '`detection.detection'
+query:
+  query_type: FixResMaxFun
+  min_f:
+    time_to_impact1: '0.01'
+    time_to_impact2: '0.01'
+    time_to_impact3: '0.01'
+  max_r:
+    fixed_cost: '5000000000 USD'
+    recurring_cost: '500000000 USD'
+  optimize_for:
+    - time_to_impact1
+    - time_to_impact2
+    - time_to_impact3

@@ -52,6 +52,21 @@ sensorHeatmap sensor =
 sensorHeatmaps :: [Heatmap]
 sensorHeatmaps = map sensorHeatmap sensors
 
+combineSensors :: SensorData -> SensorData -> Heatmap
+combineSensors sensor1 sensor2 =
+  heatmap
+    rangeAUBounds
+    sizeKmBounds
+    rangeSamples
+    sizeSamples
+    (\(x, y) -> 1 - (1 - p1 (x, y)) * (1 - p2 (x, y)))
+ where
+  p1 :: Dist2D
+  p1 = sensorToDistribution sensor1
+
+  p2 :: Dist2D
+  p2 = sensorToDistribution sensor2
+
 rangeToSizeBounds :: Bounds Double
 rangeToSizeBounds = ratioBounds rangeAUBounds sizeKmBounds
 
@@ -78,7 +93,7 @@ sensorOption sensor i = addOption functionalitySamples (sensorName sensor <> sho
     map (\x -> show x <> space <> costUnit) [i * fixedCost sensor, i * recurringCost sensor]
 
   functionalitySamples :: [Text]
-  functionalitySamples = map show $ evalSamplesCombined sensor i
+  functionalitySamples = map showDec $ evalSamplesCombined sensor i
 
 sensorResources :: [Text]
 sensorResources =
@@ -115,7 +130,7 @@ probabilityImplementations :: [Text]
 probabilityImplementations = zipWith implementation [1 ..] probabilitySpace
  where
   implementation :: Int -> (Double, Double) -> Text
-  implementation i (x, y) = addOption [show (fuse x y)] (probabilityName <> show i) (map show [x, y])
+  implementation i (x, y) = addOption [showDec (fuse x y)] (probabilityName <> show i) (map showDec [x, y])
 
   fuse :: Double -> Double -> Double
   fuse x y = 1 - (1 - x) * (1 - y)
@@ -267,7 +282,9 @@ timeToImpactReduction = makeMCDP (resources ++ blank ++ functionalities ++ blank
       rhoS :: Double
       rhoS = sizePDF (Kilometer s)
      in
-      (sensorDetectionFunctionName <> show (fIndex t s v)) `times` show rhoV `times` show rhoS
+      required (sensorDetectionFunctionName <> show (fIndex t s v))
+        `times` showDec rhoV
+        `times` showDec rhoS
 
   -- find index between 1 and `ratioSamples` corresponding to the closest range/size ratio variable for calculating detection probability
   -- `t` in seconds, `s` in km, `v` in km/s; but queried ratio is taken as range in AU divided by size in km
@@ -348,4 +365,7 @@ main = do
   writeDetection
   writeTimeToImpact
 
--- main = mapM_ plot sensorHeatmaps
+-- selectedSensorHeatmaps :: [Heatmap]
+-- selectedSensorHeatmaps = [sensorHeatmap ztf, sensorHeatmap rubin, combineSensors ztf rubin]
+
+-- main = mapM_ plot selectedSensorHeatmaps
